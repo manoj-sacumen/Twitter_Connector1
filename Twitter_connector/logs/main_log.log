@@ -1,0 +1,62 @@
+09/27/2022 01:23:28 PM p23968 Log :13 INFO - Logging setup is done.
+09/27/2022 01:23:28 PM p23968 Authentications :22 INFO - Loaded env variables from env file
+09/27/2022 01:23:28 PM p23968 Authentications :32 DEBUG - Getting API token key from env.
+09/27/2022 01:23:28 PM p23968 Collector :133 INFO - Making request forData_on_25th_Recent_tweets
+09/27/2022 01:23:28 PM p23968 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/27/2022 01:23:29 PM p23968 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z HTTP/1.1" 200 1113
+09/27/2022 01:23:29 PM p23968 Collector :68 INFO - Response is success with status code 200.
+09/27/2022 01:23:29 PM p23968 Collector :70 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/27/2022 01:23:29 PM p23968 Collector :105 INFO - Created Directory:./Response_data
+09/27/2022 01:23:29 PM p23968 Collector :121 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/27/2022 01:23:29 PM p23968 Collector :133 INFO - Making request forData_on_24th_Recent_tweets
+09/27/2022 01:23:29 PM p23968 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/27/2022 01:23:29 PM p23968 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-24T00:00:00Z&end_time=2022-09-25T00:00:00Z HTTP/1.1" 200 1245
+09/27/2022 01:23:29 PM p23968 Collector :68 INFO - Response is success with status code 200.
+09/27/2022 01:23:29 PM p23968 Collector :70 INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/27/2022 01:23:29 PM p23968 Collector :121 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/27/2022 01:23:29 PM p23968 Collector :133 INFO - Making request forData_on_25th_By_User_ID
+09/27/2022 01:23:29 PM p23968 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com2:443
+09/27/2022 01:25:43 PM p24040 Log :13 INFO - Logging setup is done.
+09/27/2022 01:25:43 PM p24040 Authentications :22 INFO - Loaded env variables from env file
+09/27/2022 01:25:43 PM p24040 Authentications :32 DEBUG - Getting API token key from env.
+09/27/2022 01:25:43 PM p24040 Collector :133 INFO - Making request forData_on_25th_Recent_tweets
+09/27/2022 01:25:43 PM p24040 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/27/2022 01:25:44 PM p24040 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z HTTP/1.1" 200 1113
+09/27/2022 01:25:44 PM p24040 Collector :68 INFO - Response is success with status code 200.
+09/27/2022 01:25:44 PM p24040 Collector :70 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/27/2022 01:25:44 PM p24040 Collector :121 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/27/2022 01:25:44 PM p24040 Collector :133 INFO - Making request forData_on_24th_Recent_tweets
+09/27/2022 01:25:44 PM p24040 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/27/2022 01:25:44 PM p24040 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-24T00:00:00Z&end_time=2022-09-25T00:00:00Z HTTP/1.1" 200 1245
+09/27/2022 01:25:44 PM p24040 Collector :68 INFO - Response is success with status code 200.
+09/27/2022 01:25:44 PM p24040 Collector :70 INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/27/2022 01:25:44 PM p24040 Collector :121 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/27/2022 01:25:44 PM p24040 Collector :133 INFO - Making request forData_on_25th_By_User_ID
+09/27/2022 01:25:44 PM p24040 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com2:443
+09/27/2022 01:26:47 PM p24066 Log :13 INFO - Logging setup is done.
+09/27/2022 01:26:48 PM p24066 Authentications :22 INFO - Loaded env variables from env file
+09/27/2022 01:26:48 PM p24066 Authentications :32 DEBUG - Getting API token key from env.
+09/27/2022 01:26:48 PM p24066 Collector :133 INFO - Making request forData_on_25th_Recent_tweets
+09/27/2022 01:26:48 PM p24066 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/27/2022 01:26:48 PM p24066 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z HTTP/1.1" 200 1113
+09/27/2022 01:26:48 PM p24066 Collector :68 INFO - Response is success with status code 200.
+09/27/2022 01:26:48 PM p24066 Collector :70 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/27/2022 01:26:48 PM p24066 Collector :121 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/27/2022 01:26:48 PM p24066 Collector :133 INFO - Making request forData_on_24th_Recent_tweets
+09/27/2022 01:26:48 PM p24066 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/27/2022 01:26:49 PM p24066 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-24T00:00:00Z&end_time=2022-09-25T00:00:00Z HTTP/1.1" 200 1245
+09/27/2022 01:26:49 PM p24066 Collector :68 INFO - Response is success with status code 200.
+09/27/2022 01:26:49 PM p24066 Collector :70 INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/27/2022 01:26:49 PM p24066 Collector :121 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/27/2022 01:26:49 PM p24066 Collector :133 INFO - Making request forData_on_25th_By_User_ID
+09/27/2022 01:26:49 PM p24066 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/27/2022 01:26:50 PM p24066 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/users/12365/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at HTTP/1.1" 200 53
+09/27/2022 01:26:50 PM p24066 Collector :68 INFO - Response is success with status code 200.
+09/27/2022 01:26:50 PM p24066 Collector :70 INFO - Storing successful data in./Response_data/success_Data_on_25th_By_User_ID.json
+09/27/2022 01:26:50 PM p24066 Collector :121 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_By_User_ID.json.
+09/27/2022 01:41:13 PM p25769 Log :13 INFO - Logging setup is done.
+09/27/2022 01:41:13 PM p25769 Authentications :22 INFO - Loaded env variables from env file
+09/27/2022 01:41:13 PM p25769 Authentications :32 DEBUG - Getting API token key from env.
+09/27/2022 01:43:46 PM p26005 Log :13 INFO - Logging setup is done.
+09/27/2022 01:43:46 PM p26005 Authentications :22 INFO - Loaded env variables from env file
+09/27/2022 01:43:46 PM p26005 Authentications :32 DEBUG - Getting API token key from env.
