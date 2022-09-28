@@ -1,2 +1,1168 @@
 09/27/2022 03:31:31 PM p32131 log :13 INFO - Logging setup is done.
 09/27/2022 03:31:31 PM p32131 authentications :27 INFO - Loading env variables from env file
+09/28/2022 02:43:35 PM p21641 log :13 INFO - Logging setup is done.
+09/28/2022 02:43:35 PM p21641 authentications :27 INFO - Loading env variables from env file
+09/28/2022 02:43:35 PM p21641 authentications :36 DEBUG - Getting API token key from env.
+09/28/2022 02:43:35 PM p21641 collector :152 INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 02:43:35 PM p21641 collector :177 INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 02:43:35 PM p21641 collector :156 INFO - Making request forData_on_25th_Recent_tweets
+09/28/2022 02:44:02 PM p21774 log :13 INFO - Logging setup is done.
+09/28/2022 02:44:02 PM p21774 authentications :27 INFO - Loading env variables from env file
+09/28/2022 02:44:02 PM p21774 authentications :36 DEBUG - Getting API token key from env.
+09/28/2022 02:44:02 PM p21774 collector :153 INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 02:44:02 PM p21774 collector :178 INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 02:44:02 PM p21774 collector :157 INFO - Making request forData_on_25th_Recent_tweets
+09/28/2022 02:44:02 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:03 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z HTTP/1.1" 200 1113
+09/28/2022 02:44:03 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:03 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:03 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:03 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:04 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwjojdixelhvywi3p1jh4t HTTP/1.1" 200 1429
+09/28/2022 02:44:04 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:04 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:04 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:04 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:04 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwjoh75a9vldhsoij936nx HTTP/1.1" 200 1057
+09/28/2022 02:44:04 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:04 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:04 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:04 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:06 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwjof0rkuuy00lvev2zse5 HTTP/1.1" 200 1235
+09/28/2022 02:44:06 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:06 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:06 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:06 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:07 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwjgy2m5ojm0s5b6i5sol9 HTTP/1.1" 200 1258
+09/28/2022 02:44:07 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:07 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:07 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:07 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:08 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwjgvwufkd7gsv44avic8t HTTP/1.1" 200 1264
+09/28/2022 02:44:08 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:08 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:08 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:08 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:09 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwjgso17pe2tofvslmaem5 HTTP/1.1" 200 1278
+09/28/2022 02:44:09 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:09 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:09 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:09 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:09 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwj9amox2f5gnlv6x0nrst HTTP/1.1" 200 1620
+09/28/2022 02:44:09 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:09 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:09 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:09 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:10 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwj98h2jxxbd7dt9d6a931 HTTP/1.1" 200 1519
+09/28/2022 02:44:10 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:10 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:10 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:10 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:12 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwj97d9s83herzzey0f6gt HTTP/1.1" 200 1163
+09/28/2022 02:44:12 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:12 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:12 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:12 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:12 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwj945octytwbn3nwoogot HTTP/1.1" 200 1133
+09/28/2022 02:44:12 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:12 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:12 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:12 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:13 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwj1m418bp5xaufpdx6qv1 HTTP/1.1" 200 1238
+09/28/2022 02:44:13 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:13 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:13 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:13 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:13 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwj1ivdkfidq7wjv05r88t HTTP/1.1" 200 1268
+09/28/2022 02:44:13 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:13 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:13 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:13 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:15 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwj1hs14zr0r434wfhp5rx HTTP/1.1" 200 1222
+09/28/2022 02:44:15 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:15 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:15 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:15 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:15 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwj1ejohvwnf5bp9v8u7p9 HTTP/1.1" 200 1101
+09/28/2022 02:44:15 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:15 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:15 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:15 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:16 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwitwh9x7ic61ge7h9rp19 HTTP/1.1" 200 1326
+09/28/2022 02:44:16 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:16 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:16 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:16 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:17 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwitubnkv4nwn7d1nf2f7h HTTP/1.1" 200 1113
+09/28/2022 02:44:17 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:17 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:17 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:17 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:18 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwits6c9bj8z4x6267bptp HTTP/1.1" 200 1120
+09/28/2022 02:44:18 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:18 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:18 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:18 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:19 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwitowx59bmwqhe7fmyvel HTTP/1.1" 200 1383
+09/28/2022 02:44:19 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:19 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:19 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:19 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:19 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwim7zdpdimj9dai2qdzst HTTP/1.1" 200 1290
+09/28/2022 02:44:19 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:19 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:19 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:19 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:20 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwim3nof6p71k3njq9tg1p HTTP/1.1" 200 1405
+09/28/2022 02:44:20 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:20 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:20 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:20 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:21 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwim0epssckaif0gsnytfh HTTP/1.1" 200 1308
+09/28/2022 02:44:21 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:21 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:21 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:21 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:21 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwiejf7c04uf6fhk404fb1 HTTP/1.1" 200 1232
+09/28/2022 02:44:21 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:21 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:21 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:21 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:22 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwieh9qghyu7re7mdpgwal HTTP/1.1" 200 1401
+09/28/2022 02:44:22 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:22 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:22 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:22 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:23 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwiee1j2kwhzyyfea8l9bx HTTP/1.1" 200 1151
+09/28/2022 02:44:23 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:23 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:23 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:23 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:24 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwi6x2rvtk92qkx9dirqt9 HTTP/1.1" 200 991
+09/28/2022 02:44:24 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:24 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:24 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:24 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:25 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwi6sru42y8afvk5mm8dbx HTTP/1.1" 200 947
+09/28/2022 02:44:25 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:25 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:25 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:25 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:26 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwi6rosnwhxnenhb2ze0sd HTTP/1.1" 200 1245
+09/28/2022 02:44:26 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:26 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:26 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:26 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:27 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwi6ndelfm47c0s68ypqil HTTP/1.1" 200 1118
+09/28/2022 02:44:27 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:27 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:27 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:27 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:28 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwhz6eccb1lakt2op3zji5 HTTP/1.1" 200 1201
+09/28/2022 02:44:28 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:28 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:28 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:28 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:29 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwhz233lb8hmjj2vuay2rh HTTP/1.1" 200 1086
+09/28/2022 02:44:29 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:29 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:29 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:29 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:30 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwhyzwpv3zx75hw5tor0cd HTTP/1.1" 200 1341
+09/28/2022 02:44:30 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:30 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:30 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:30 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:31 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwhriyf2xck13a72ykwad9 HTTP/1.1" 200 1247
+09/28/2022 02:44:31 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:31 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:31 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:31 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:32 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwhrfpws24yst37cuth6yl HTTP/1.1" 200 1153
+09/28/2022 02:44:32 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:32 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:32 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:32 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:33 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwhrempxbfynwe9yozbu65 HTTP/1.1" 200 1037
+09/28/2022 02:44:33 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:33 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:33 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:33 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:34 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwhrcgce190asf2vdb24cd HTTP/1.1" 200 1166
+09/28/2022 02:44:34 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:34 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:34 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:34 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:35 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uwhrab6d75ho5tosvj3p19 HTTP/1.1" 200 1150
+09/28/2022 02:44:35 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:35 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:35 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:35 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:35 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv128ue9egj55dqej6i35p HTTP/1.1" 200 1276
+09/28/2022 02:44:35 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:35 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:35 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:35 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:36 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv126oh2ec653xaoqwvibh HTTP/1.1" 200 1290
+09/28/2022 02:44:36 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:36 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:36 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:36 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:37 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv124j031v0myuwrk45wn1 HTTP/1.1" 200 1021
+09/28/2022 02:44:37 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:37 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:37 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:37 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:38 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv122ch0m6u7jbbp23xb3x HTTP/1.1" 200 1113
+09/28/2022 02:44:38 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:38 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:38 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:38 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:38 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv0uldpsatx0llufetrgcd HTTP/1.1" 200 1693
+09/28/2022 02:44:38 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:38 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:38 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:38 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:39 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv0uj88wt3gbjx43k6spz1 HTTP/1.1" 200 1084
+09/28/2022 02:44:39 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:39 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:39 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:39 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:40 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv0uexb17qseaa4k1xvptp HTTP/1.1" 200 1280
+09/28/2022 02:44:40 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:40 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:40 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:40 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:40 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv0ucr2wi83jqy1wj7k6f1 HTTP/1.1" 200 1217
+09/28/2022 02:44:40 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:40 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:40 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:40 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:41 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv0muq6zodcbb8ze50psvx HTTP/1.1" 200 1288
+09/28/2022 02:44:41 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:41 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:41 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:41 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:42 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv0mrgrzg5c15krbgkl08t HTTP/1.1" 200 1403
+09/28/2022 02:44:42 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:42 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:42 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:42 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:43 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv0mqe6x4ffqg9m2ufnse5 HTTP/1.1" 200 1144
+09/28/2022 02:44:43 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:43 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:43 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:43 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:44 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv0mo8vk0phgkkq57z89rx HTTP/1.1" 200 1174
+09/28/2022 02:44:44 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:44 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:44 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:44 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:44 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv0f8cjwfxgatlkt8n9jel HTTP/1.1" 200 1177
+09/28/2022 02:44:44 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:44 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:44 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:44 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:46 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv0f54i04njeyawbnnk4u5 HTTP/1.1" 200 1127
+09/28/2022 02:44:46 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:46 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:46 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:46 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:47 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv0f2xcw2k0mt52rgj86m5 HTTP/1.1" 200 878
+09/28/2022 02:44:47 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:47 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:47 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:47 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:48 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv0f0s74hf5bytidywe0l9 HTTP/1.1" 200 1191
+09/28/2022 02:44:48 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:48 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:48 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:48 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:49 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv07jtfve9sxadm60sqa9p HTTP/1.1" 200 1039
+09/28/2022 02:44:49 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:49 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:49 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:49 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:50 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv07gljefgp5ms5foxxjzx HTTP/1.1" 200 1229
+09/28/2022 02:44:50 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:50 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:50 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:50 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:51 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv07dcq5u7g9jnvjsl2zr1 HTTP/1.1" 200 1275
+09/28/2022 02:44:51 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:51 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:51 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:51 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:52 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv07c8xgevzfst6qw2vc71 HTTP/1.1" 200 1239
+09/28/2022 02:44:52 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:52 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:52 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:52 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:53 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uv07a308n6umsx0j9nt7jx HTTP/1.1" 200 1465
+09/28/2022 02:44:53 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:53 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:53 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:53 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:53 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzzqz344do8qpni1qr531 HTTP/1.1" 200 1184
+09/28/2022 02:44:53 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:53 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:53 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:53 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:54 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzzot07tazmryg3mwgk8t HTTP/1.1" 200 1231
+09/28/2022 02:44:54 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:54 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:54 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:54 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:56 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzzmnzq4smbflb1iy0nel HTTP/1.1" 200 1160
+09/28/2022 02:44:56 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:56 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:56 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:56 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:57 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzs5obqycncyzmy19r24d HTTP/1.1" 200 1444
+09/28/2022 02:44:57 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:57 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:57 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:57 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:58 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzs3j5x1ijmng9zvv3e65 HTTP/1.1" 200 1313
+09/28/2022 02:44:58 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:58 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:58 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:58 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:44:59 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzs2fczxkmr2bpw7bampp HTTP/1.1" 200 1210
+09/28/2022 02:44:59 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:44:59 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:44:59 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:44:59 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:00 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzs0anhjzkimix1kje7wd HTTP/1.1" 200 1355
+09/28/2022 02:45:00 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:00 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:00 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:00 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:00 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzry5156qrll909lz1mrh HTTP/1.1" 200 1407
+09/28/2022 02:45:00 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:00 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:00 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:00 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:01 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzki8pgtixtl7c0kj4uil HTTP/1.1" 200 1181
+09/28/2022 02:45:01 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:01 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:01 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:01 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:02 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzkh529ty856yuu59jm2l HTTP/1.1" 200 1185
+09/28/2022 02:45:02 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:02 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:02 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:02 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:04 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzkdx5qjnmlppyxrkvzb1 HTTP/1.1" 200 1271
+09/28/2022 02:45:04 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:04 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:04 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:04 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:05 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzkaoyl2whotqq48nnptp HTTP/1.1" 200 1217
+09/28/2022 02:45:05 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:05 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:05 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:05 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:05 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzk8hz07osx2ow3gumc8t HTTP/1.1" 200 1297
+09/28/2022 02:45:05 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:05 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:05 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:05 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:06 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzcqgxot1x3scnyyizfy5 HTTP/1.1" 200 1764
+09/28/2022 02:45:06 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:06 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:06 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:06 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:07 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzcm5jj97ws4sis7uao3h HTTP/1.1" 200 1193
+09/28/2022 02:45:07 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:07 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:07 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:07 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:08 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuzck02jxhy5vwh12lzou5 HTTP/1.1" 200 1259
+09/28/2022 02:45:08 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:08 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:08 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:08 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:08 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuz531gwbb9ead2xm7781p HTTP/1.1" 200 1284
+09/28/2022 02:45:08 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:08 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:08 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:08 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:09 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuz50v8komyiqfiiezsxa5 HTTP/1.1" 200 1146
+09/28/2022 02:45:09 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:09 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:09 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:09 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:10 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uuz4xlz1blmjss2xku2qnx HTTP/1.1" 200 1374
+09/28/2022 02:45:10 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:10 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:10 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:10 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:11 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3utifv3z6sbs7jpvjmnt3lp HTTP/1.1" 200 1279
+09/28/2022 02:45:11 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:11 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:11 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:11 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:12 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3utifswzpqvykgm7zucztrx HTTP/1.1" 200 1430
+09/28/2022 02:45:12 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:12 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:12 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:12 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:12 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3utifqr29io18u9by6nxrb1 HTTP/1.1" 200 1239
+09/28/2022 02:45:12 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:12 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:12 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:12 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:13 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3utifnjmdao0cehyo92xz0d HTTP/1.1" 200 1229
+09/28/2022 02:45:13 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:13 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:13 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:13 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:14 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3utifld8k0owzjkygr4w6f1 HTTP/1.1" 200 1182
+09/28/2022 02:45:14 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:14 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:14 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:14 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:15 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uti84e6k4z8ithxn30q3jx HTTP/1.1" 200 1159
+09/28/2022 02:45:15 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:15 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:15 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:15 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:17 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uti816flkaex79nadatta5 HTTP/1.1" 200 1144
+09/28/2022 02:45:17 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:17 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:17 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:17 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:18 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uti7yzwdpn4re5hkihairh HTTP/1.1" 200 1276
+09/28/2022 02:45:18 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:18 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:18 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:18 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:19 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uti0i1lpdqikvku1i3cygt HTTP/1.1" 200 1110
+09/28/2022 02:45:19 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:19 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:19 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:19 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:19 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uti0fv2dpyng4dhb7nzji5 HTTP/1.1" 200 1196
+09/28/2022 02:45:19 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:19 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:19 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:19 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:20 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uti0cngxk1me1nv13nthfh HTTP/1.1" 200 1340
+09/28/2022 02:45:20 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:20 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:20 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:20 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:21 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uti0bjtps8qd5ll6dmwvb1 HTTP/1.1" 200 1095
+09/28/2022 02:45:21 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:21 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:21 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:21 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:22 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uti08c2v1r971v590eg96l HTTP/1.1" 200 1410
+09/28/2022 02:45:22 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:22 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:22 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:22 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:23 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uthstic0kdv0tl68cfz98d HTTP/1.1" 200 1051
+09/28/2022 02:45:23 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:23 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:23 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:23 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:24 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uthsqaa9oeryjrlk883kvx HTTP/1.1" 200 1098
+09/28/2022 02:45:24 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:24 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:24 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:24 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:26 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uthso3g6f3e4ed8yv1anb1 HTTP/1.1" 200 1435
+09/28/2022 02:45:26 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:26 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:26 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:26 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:26 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uthskve9cs4iusse7rp3el HTTP/1.1" 200 1173
+09/28/2022 02:45:26 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:26 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:26 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:26 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:28 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uthl4zzddl1maica6v35a5 HTTP/1.1" 200 1576
+09/28/2022 02:45:28 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:28 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:28 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:28 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:29 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uthl3w18o2ia459pxshrp9 HTTP/1.1" 200 1273
+09/28/2022 02:45:29 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:29 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:29 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:29 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:30 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uthl1qpmcko4fuv3utgku5 HTTP/1.1" 200 1243
+09/28/2022 02:45:30 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:30 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:30 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:30 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:30 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uthkxf5zxg3whunjioeykd HTTP/1.1" 200 1366
+09/28/2022 02:45:30 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:30 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:30 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:30 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:32 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uthdgget58qbjselnfa4jh HTTP/1.1" 200 1277
+09/28/2022 02:45:32 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:32 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:32 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:32 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:33 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uthdd75bcfq1146bqnrxx9 HTTP/1.1" 200 1251
+09/28/2022 02:45:33 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:33 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:33 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:33 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:34 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uthd8wt9nt0vt6g9qnlt31 HTTP/1.1" 200 1408
+09/28/2022 02:45:34 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:34 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:34 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:34 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:34 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uthd6qw2ofvadd78nrjzb1 HTTP/1.1" 200 1103
+09/28/2022 02:45:34 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:34 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:34 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:34 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:35 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uth5pr2lut1mqj1kqg47lp HTTP/1.1" 200 1139
+09/28/2022 02:45:35 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:35 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:35 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:35 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:36 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uth5mjbnaby52eev2kjiil HTTP/1.1" 200 1203
+09/28/2022 02:45:36 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:36 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:36 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:36 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:37 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3uth5kdpbpypkyzwbhhxmrh HTTP/1.1" 200 1439
+09/28/2022 02:45:37 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:37 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:37 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:37 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:38 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3utgy3f3k9kodk2kz9vhwn1 HTTP/1.1" 200 1107
+09/28/2022 02:45:38 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:38 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:38 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:38 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:39 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3utgy196ayehhvz0onigdbx HTTP/1.1" 200 1191
+09/28/2022 02:45:39 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:39 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:39 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:39 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:40 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3utgxz3edvvna2cpm4jpe9p HTTP/1.1" 200 1241
+09/28/2022 02:45:40 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:40 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:40 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:40 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:40 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3utgxwwpt1448laud5oki2l HTTP/1.1" 200 1167
+09/28/2022 02:45:40 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:40 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:40 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:40 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:41 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3utgxuqxxj58h00936ysubh HTTP/1.1" 200 1186
+09/28/2022 02:45:41 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:41 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:41 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:41 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:45:42 PM p21774 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&next_token=b26v89c19zqg8o3fpzblcj3utgqeux3tgb4bn5ye6iem5 HTTP/1.1" 200 1381
+09/28/2022 02:45:42 PM p21774 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:45:42 PM p21774 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:45:42 PM p21774 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:45:42 PM p21774 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:40 PM p22373 log :13 INFO - Logging setup is done.
+09/28/2022 02:46:40 PM p22373 authentications :27 INFO - Loading env variables from env file
+09/28/2022 02:46:40 PM p22373 authentications :36 DEBUG - Getting API token key from env.
+09/28/2022 02:46:40 PM p22373 collector :153 INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 02:46:40 PM p22373 collector :178 INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 02:46:40 PM p22373 collector :157 INFO - Making request forData_on_25th_Recent_tweets
+09/28/2022 02:46:40 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:41 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z HTTP/1.1" 200 1254
+09/28/2022 02:46:41 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:41 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:41 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:41 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:42 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77rk0q685qgmktt2557jx HTTP/1.1" 200 1120
+09/28/2022 02:46:42 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:42 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:42 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:42 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:43 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77riyapcv0it50vwmjla5 HTTP/1.1" 200 1352
+09/28/2022 02:46:43 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:43 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:43 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:43 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:44 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77rhvepanyq4rhjlug2nx HTTP/1.1" 200 1400
+09/28/2022 02:46:45 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:45 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:45 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:45 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:45 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77rgsdcyewnvm0x7jrpfh HTTP/1.1" 200 1227
+09/28/2022 02:46:45 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:45 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:45 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:45 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:46 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77remr25q61stoczo5jlp HTTP/1.1" 200 1489
+09/28/2022 02:46:46 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:46 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:46 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:46 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:47 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77rcha1abab8yjvirgvi5 HTTP/1.1" 200 1282
+09/28/2022 02:46:47 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:47 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:47 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:47 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:48 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77jwlpq09sjurl602d30d HTTP/1.1" 200 1158
+09/28/2022 02:46:48 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:48 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:48 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:48 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:49 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77jvi7wruhd1na5ryhu2l HTTP/1.1" 200 1098
+09/28/2022 02:46:49 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:49 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:49 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:49 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:50 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77juf155eeg96vg28igsd HTTP/1.1" 200 1361
+09/28/2022 02:46:50 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:50 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:50 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:50 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:51 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77jtc57eczxwfa160ccql HTTP/1.1" 200 1402
+09/28/2022 02:46:51 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:51 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:51 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:51 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:53 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77jr6ob55p7yd4ny2qa9p HTTP/1.1" 200 1252
+09/28/2022 02:46:53 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:53 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:53 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:53 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:54 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77jp1tcmgaluvnnb53zb1 HTTP/1.1" 200 1009
+09/28/2022 02:46:54 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:54 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:54 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:54 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:55 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77jnxv7w6fgy7n15lqn3x HTTP/1.1" 200 1200
+09/28/2022 02:46:55 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:55 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:55 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:55 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:56 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77jmva2hef1xlbhrsn5h9 HTTP/1.1" 200 1256
+09/28/2022 02:46:56 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:56 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:56 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:56 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:57 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77c6zeu8w0dnuwteqo03h HTTP/1.1" 200 1133
+09/28/2022 02:46:57 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:57 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:57 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:57 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:58 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77c5wogfc93m4jj59pvgd HTTP/1.1" 200 1200
+09/28/2022 02:46:58 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:58 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:58 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:58 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:46:59 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77c4tslqpmwc96cgsz9tp HTTP/1.1" 200 1223
+09/28/2022 02:46:59 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:46:59 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:46:59 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:46:59 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:00 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77c2nprpq05b97axq0hod HTTP/1.1" 200 1191
+09/28/2022 02:47:00 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:00 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:00 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:00 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:01 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77c0i3dtv73jlst7uz5vh HTTP/1.1" 200 1317
+09/28/2022 02:47:01 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:01 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:01 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:01 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:02 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi77bycmf9xoqu9i10gub99 HTTP/1.1" 200 1175
+09/28/2022 02:47:02 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:02 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:02 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:02 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:03 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi774igwn5173rympqnuyd9 HTTP/1.1" 200 1246
+09/28/2022 02:47:03 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:03 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:03 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:03 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:04 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi774hd9gwdu60fpg5sh1ml HTTP/1.1" 200 1414
+09/28/2022 02:47:04 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:04 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:04 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:04 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:05 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi774f83gtj9zvf83d5n919 HTTP/1.1" 200 1385
+09/28/2022 02:47:05 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:05 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:05 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:05 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:07 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi774d2rxl3mp1seoijngxp HTTP/1.1" 200 1336
+09/28/2022 02:47:07 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:07 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:07 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:07 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:08 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi774bzl7hdal50ly1er7gd HTTP/1.1" 200 1396
+09/28/2022 02:47:08 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:08 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:08 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:08 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:09 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi774awe9owtyomyzjhdjel HTTP/1.1" 200 1103
+09/28/2022 02:47:09 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:09 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:09 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:09 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:10 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76wuzx60ivr6u859vylj1 HTTP/1.1" 200 1164
+09/28/2022 02:47:10 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:10 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:10 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:10 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:11 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76wsulpupvtb7tulaoccd HTTP/1.1" 200 1173
+09/28/2022 02:47:11 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:11 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:11 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:11 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:11 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76wrr3y6b1s86apf1dxtp HTTP/1.1" 200 1120
+09/28/2022 02:47:11 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:11 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:11 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:11 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:13 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76wpmpf15uhwreq0rbed9 HTTP/1.1" 200 1083
+09/28/2022 02:47:13 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:13 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:13 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:13 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:13 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76woig4voirda7sec4hod HTTP/1.1" 200 1184
+09/28/2022 02:47:13 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:13 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:13 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:13 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:14 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76wlajwdtrj3y327so6t9 HTTP/1.1" 200 1424
+09/28/2022 02:47:14 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:14 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:14 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:14 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:15 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76p6hpxdn8bqqvd8s8bjx HTTP/1.1" 200 1221
+09/28/2022 02:47:15 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:15 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:15 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:15 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:16 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76p5f4v1hqc7uz39ctgfx HTTP/1.1" 200 1219
+09/28/2022 02:47:16 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:16 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:16 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:16 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:17 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76p39ik89l5vbkbeehvnh HTTP/1.1" 200 1310
+09/28/2022 02:47:17 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:17 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:17 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:17 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:18 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76p25ka4bazzu046xhc3h HTTP/1.1" 200 1415
+09/28/2022 02:47:18 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:18 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:18 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:18 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:18 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76p12oenkmtbj58j7i2kd HTTP/1.1" 200 1340
+09/28/2022 02:47:18 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:18 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:18 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:19 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:19 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76oyxijyu16d5l09s28al HTTP/1.1" 200 1301
+09/28/2022 02:47:19 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:19 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:19 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:19 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:20 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76ows1ohj8da5g6rkclml HTTP/1.1" 200 1094
+09/28/2022 02:47:20 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:20 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:20 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:20 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:20 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76hhywu212kg2yy5ht2t9 HTTP/1.1" 200 1133
+09/28/2022 02:47:20 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:20 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:20 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:20 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:21 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76hguynt97a2vhyqign0d HTTP/1.1" 200 1206
+09/28/2022 02:47:21 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:21 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:21 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:21 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:22 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76heq3j5xwi6k3jwujjp9 HTTP/1.1" 200 1018
+09/28/2022 02:47:22 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:22 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:22 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:22 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:23 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76hdmr94id3ibldd6fhx9 HTTP/1.1" 200 1414
+09/28/2022 02:47:23 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:23 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:23 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:23 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:24 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76hbhqod5k4ler00u0upp HTTP/1.1" 200 1288
+09/28/2022 02:47:24 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:24 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:24 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:24 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:25 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76h9bz0k1144zhpyn4f3x HTTP/1.1" 200 1252
+09/28/2022 02:47:25 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:25 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:25 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:25 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:26 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76h898kes1ejaqah5gxa5 HTTP/1.1" 200 1171
+09/28/2022 02:47:26 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:26 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:26 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:26 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:26 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi76h8864zrwyhr249qlit9 HTTP/1.1" 200 1236
+09/28/2022 02:47:26 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:26 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:26 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:26 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:27 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5ps6slxgaoqqy8vc9jjwd HTTP/1.1" 200 1225
+09/28/2022 02:47:27 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:27 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:27 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:27 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:29 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5ps5q0ucofgh5aw9843nh HTTP/1.1" 200 1405
+09/28/2022 02:47:29 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:29 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:29 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:29 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:29 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5ps4mdpnpupk8q0pgdjlp HTTP/1.1" 200 1543
+09/28/2022 02:47:29 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:29 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:29 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:29 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:31 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5ps2gwrupw75s2jyetdod HTTP/1.1" 200 1141
+09/28/2022 02:47:31 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:31 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:31 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:31 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:31 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5ps1dq07mer4ycue5o70d HTTP/1.1" 200 1188
+09/28/2022 02:47:31 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:31 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:31 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:31 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:33 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5prz8pjc78ll2zb12du9p HTTP/1.1" 200 1389
+09/28/2022 02:47:33 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:33 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:33 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:33 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:33 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pry5intxeghz75yuq071 HTTP/1.1" 200 1146
+09/28/2022 02:47:33 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:33 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:33 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:33 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:34 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pkjcdot6rr18gwjxegsd HTTP/1.1" 200 1309
+09/28/2022 02:47:34 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:34 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:34 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:34 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:36 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pki9ce1du7gceusp09kt HTTP/1.1" 200 1184
+09/28/2022 02:47:36 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:36 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:36 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:36 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:37 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pkg3pzdet4hrz78a3o8t HTTP/1.1" 200 1224
+09/28/2022 02:47:37 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:37 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:37 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:37 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:38 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pkf0dn0pp6rkz1qssakd HTTP/1.1" 200 1344
+09/28/2022 02:47:38 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:38 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:38 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:38 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:39 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pkdxhohrx5r5bzx9u6bh HTTP/1.1" 200 1411
+09/28/2022 02:47:39 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:39 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:39 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:39 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:40 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pkbrkeehfinh0iu2dhml HTTP/1.1" 200 1182
+09/28/2022 02:47:40 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:40 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:40 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:40 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:41 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pk9ly0ja3pywabwrn919 HTTP/1.1" 200 1286
+09/28/2022 02:47:41 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:41 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:41 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:41 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:41 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pcsny95mlmdrimst5u2l HTTP/1.1" 200 1286
+09/28/2022 02:47:41 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:41 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:41 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:42 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:43 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pcrkri9zw01kn4ivihz1 HTTP/1.1" 200 1351
+09/28/2022 02:47:43 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:43 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:43 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:43 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:44 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pcpf51arfahddml7f3b1 HTTP/1.1" 200 1199
+09/28/2022 02:47:44 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:44 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:44 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:44 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:45 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pcobn6khbwk8xn2fozgd HTTP/1.1" 200 1260
+09/28/2022 02:47:45 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:45 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:45 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:45 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:46 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pcn8ly32vw7nfqavnrzx HTTP/1.1" 200 1481
+09/28/2022 02:47:46 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:46 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:46 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:46 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:47 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5pcm5f3dsezacduysdmyl HTTP/1.1" 200 1247
+09/28/2022 02:47:47 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:47 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:47 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:47 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:48 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5p56ariyxtg53izh4mlx9 HTTP/1.1" 200 1348
+09/28/2022 02:47:48 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:48 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:48 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:48 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:49 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5p557q3k27vr1wckqli0t HTTP/1.1" 200 976
+09/28/2022 02:47:49 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:49 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:49 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:49 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:50 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5p5448bw6z04o56pstfnh HTTP/1.1" 200 1267
+09/28/2022 02:47:50 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:50 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:50 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:50 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:51 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5p531713yhyk8uxr00got HTTP/1.1" 200 1091
+09/28/2022 02:47:51 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:51 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:51 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:51 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:51 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5p50whh68ykw8pu1m28al HTTP/1.1" 200 1294
+09/28/2022 02:47:51 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:51 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:51 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:51 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:52 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5p50v42hxwpuoozucefel HTTP/1.1" 200 1350
+09/28/2022 02:47:52 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:52 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:53 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:53 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:54 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5p4yq3ktr3ge5ebhzxw1p HTTP/1.1" 200 1549
+09/28/2022 02:47:54 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:54 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:54 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:54 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:55 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5p4xmr98ueqbze0vhsbct HTTP/1.1" 200 1015
+09/28/2022 02:47:55 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:55 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:55 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:55 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:56 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5p4wkbsdbz74f5hihlzzx HTTP/1.1" 200 1043
+09/28/2022 02:47:56 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:56 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:56 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:56 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:57 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5oxhql2i68rfbekwbwcql HTTP/1.1" 200 1127
+09/28/2022 02:47:57 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:57 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:57 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:57 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 02:47:58 PM p22373 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=India&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&next_token=b26v89c19zqg8o3fpzbkxsdi5oxflvnxhs2msltyeon0d HTTP/1.1" 200 1346
+09/28/2022 02:47:58 PM p22373 collector :73 INFO - Response is success with status code 200.
+09/28/2022 02:47:58 PM p22373 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 02:47:58 PM p22373 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 02:47:58 PM p22373 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 03:08:53 PM p24679 log :13 INFO - Logging setup is done.
+09/28/2022 03:08:53 PM p24679 authentications :27 INFO - Loading env variables from env file
+09/28/2022 03:08:53 PM p24679 authentications :36 DEBUG - Getting API token key from env.
+09/28/2022 03:08:53 PM p24679 collector :153 INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 03:08:53 PM p24679 collector :178 INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 03:08:53 PM p24679 collector :157 INFO - Making request forData_on_25th_Recent_tweets
+09/28/2022 03:08:53 PM p24679 connectionpool :1003 DEBUG - Starting new HTTPS connection (1): api.twitter.com:443
+09/28/2022 03:08:53 PM p24679 connectionpool :456 DEBUG - https://api.twitter.com:443 "GET /2/tweets/search/recent?query=Manoj&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&max_results=100 HTTP/1.1" 200 6020
+09/28/2022 03:08:53 PM p24679 collector :73 INFO - Response is success with status code 200.
+09/28/2022 03:08:53 PM p24679 collector :75 INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 03:08:53 PM p24679 collector :142 INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 03:08:53 PM p24679 collector :153 INFO - Preparing to get data for Data_on_24th_Recent_tweets parameters.
+09/28/2022 03:08:53 PM p24679 collector :178 INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 03:08:53 PM p24679 collector :157 INFO - Making request forData_on_24th_Recent_tweets
+09/28/2022 03:08:53 PM p24679 collector :153 INFO - Preparing to get data for Data_on_25th_By_User_ID parameters.
+09/28/2022 03:08:53 PM p24679 collector :178 INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 03:08:53 PM p24679 collector :157 INFO - Making request forData_on_25th_By_User_ID
+09/28/2022 07:54:29 PM p44496 log :13  INFO - Logging setup is done.
+09/28/2022 07:56:23 PM p44637 log :13  INFO - Logging setup is done.
+09/28/2022 07:56:23 PM p44637 authentications :27  INFO - Loading env variables from env file
+09/28/2022 07:56:23 PM p44637 collector :181  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 07:56:23 PM p44637 collector :211  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 07:56:23 PM p44637 collector :185  INFO - Making request for Data_on_25th_Recent_tweets
+09/28/2022 07:56:24 PM p44637 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:56:24 PM p44637 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 07:56:24 PM p44637 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 07:56:25 PM p44637 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:56:25 PM p44637 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 07:56:25 PM p44637 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 07:56:25 PM p44637 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:56:25 PM p44637 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 07:56:25 PM p44637 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 07:56:25 PM p44637 collector :181  INFO - Preparing to get data for Data_on_24th_Recent_tweets parameters.
+09/28/2022 07:56:25 PM p44637 collector :211  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 07:56:25 PM p44637 collector :185  INFO - Making request for Data_on_24th_Recent_tweets
+09/28/2022 07:56:26 PM p44637 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:56:26 PM p44637 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 07:56:26 PM p44637 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 07:56:27 PM p44637 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:56:27 PM p44637 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 07:56:27 PM p44637 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 07:56:30 PM p44637 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:56:30 PM p44637 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 07:56:30 PM p44637 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 07:56:30 PM p44637 collector :181  INFO - Preparing to get data for Data_on_25th_By_User_ID parameters.
+09/28/2022 07:56:30 PM p44637 collector :211  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 07:56:30 PM p44637 collector :185  INFO - Making request for Data_on_25th_By_User_ID
+09/28/2022 07:56:30 PM p44637 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:56:30 PM p44637 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_By_User_ID.json
+09/28/2022 07:56:30 PM p44637 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_By_User_ID.json.
+09/28/2022 07:56:30 PM p44637 collector :181  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_400 parameters.
+09/28/2022 07:56:30 PM p44637 collector :211  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 07:56:30 PM p44637 collector :185  INFO - Making request for Data_on_20th_By_User_ID_error_400
+09/28/2022 07:56:32 PM p44637 collector :81  ERROR - Invalid Request,One or more parameters to your request was invalid.
+09/28/2022 07:56:32 PM p44637 collector :86  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_400.json
+09/28/2022 07:56:32 PM p44637 collector :171  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_400.json.
+09/28/2022 07:56:32 PM p44637 collector :181  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_404 parameters.
+09/28/2022 07:56:32 PM p44637 collector :211  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 07:56:32 PM p44637 collector :185  INFO - Making request for Data_on_20th_By_User_ID_error_404
+09/28/2022 07:56:32 PM p44637 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:56:32 PM p44637 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_20th_By_User_ID_error_404.json
+09/28/2022 07:56:32 PM p44637 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_20th_By_User_ID_error_404.json.
+09/28/2022 07:57:55 PM p44837 log :13  INFO - Logging setup is done.
+09/28/2022 07:57:55 PM p44837 authentications :27  INFO - Loading env variables from env file
+09/28/2022 07:57:55 PM p44837 collector :181  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 07:57:55 PM p44837 collector :211  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 07:57:55 PM p44837 collector :185  INFO - Making request for Data_on_25th_Recent_tweets
+09/28/2022 07:57:55 PM p44837 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:57:55 PM p44837 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 07:57:55 PM p44837 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 07:57:56 PM p44837 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:57:56 PM p44837 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 07:57:56 PM p44837 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 07:57:57 PM p44837 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:57:57 PM p44837 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 07:57:57 PM p44837 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 07:57:57 PM p44837 collector :181  INFO - Preparing to get data for Data_on_24th_Recent_tweets parameters.
+09/28/2022 07:57:57 PM p44837 collector :211  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 07:57:57 PM p44837 collector :185  INFO - Making request for Data_on_24th_Recent_tweets
+09/28/2022 07:57:59 PM p44837 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:57:59 PM p44837 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 07:57:59 PM p44837 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 07:58:00 PM p44837 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:58:00 PM p44837 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 07:58:00 PM p44837 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 07:58:01 PM p44837 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:58:01 PM p44837 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 07:58:01 PM p44837 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 07:58:01 PM p44837 collector :181  INFO - Preparing to get data for Data_on_25th_By_User_ID parameters.
+09/28/2022 07:58:01 PM p44837 collector :211  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 07:58:01 PM p44837 collector :185  INFO - Making request for Data_on_25th_By_User_ID
+09/28/2022 07:58:03 PM p44837 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:58:03 PM p44837 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_By_User_ID.json
+09/28/2022 07:58:03 PM p44837 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_By_User_ID.json.
+09/28/2022 07:58:03 PM p44837 collector :181  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_400 parameters.
+09/28/2022 07:58:03 PM p44837 collector :211  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 07:58:03 PM p44837 collector :185  INFO - Making request for Data_on_20th_By_User_ID_error_400
+09/28/2022 07:58:04 PM p44837 collector :81  ERROR - Invalid Request,One or more parameters to your request was invalid.
+09/28/2022 07:58:04 PM p44837 collector :86  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_400.json
+09/28/2022 07:58:04 PM p44837 collector :171  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_400.json.
+09/28/2022 07:58:04 PM p44837 collector :181  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_404 parameters.
+09/28/2022 07:58:04 PM p44837 collector :211  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 07:58:04 PM p44837 collector :185  INFO - Making request for Data_on_20th_By_User_ID_error_404
+09/28/2022 07:58:05 PM p44837 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:58:05 PM p44837 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_20th_By_User_ID_error_404.json
+09/28/2022 07:58:05 PM p44837 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_20th_By_User_ID_error_404.json.
+09/28/2022 07:58:55 PM p45033 log :13  INFO - Logging setup is done.
+09/28/2022 07:58:55 PM p45033 authentications :27  INFO - Loading env variables from env file
+09/28/2022 07:58:55 PM p45033 collector :181  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 07:58:55 PM p45033 collector :211  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 07:58:55 PM p45033 collector :185  INFO - Making request for Data_on_25th_Recent_tweets
+09/28/2022 07:58:56 PM p45033 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:58:56 PM p45033 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 07:58:56 PM p45033 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 07:58:57 PM p45033 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:58:57 PM p45033 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 07:58:57 PM p45033 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 07:58:58 PM p45033 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:58:58 PM p45033 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 07:58:58 PM p45033 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 07:58:58 PM p45033 collector :181  INFO - Preparing to get data for Data_on_24th_Recent_tweets parameters.
+09/28/2022 07:58:58 PM p45033 collector :211  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 07:58:58 PM p45033 collector :185  INFO - Making request for Data_on_24th_Recent_tweets
+09/28/2022 07:58:58 PM p45033 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:58:58 PM p45033 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 07:58:58 PM p45033 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 07:58:59 PM p45033 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:58:59 PM p45033 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 07:58:59 PM p45033 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 07:59:00 PM p45033 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:59:00 PM p45033 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 07:59:00 PM p45033 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 07:59:00 PM p45033 collector :181  INFO - Preparing to get data for Data_on_25th_By_User_ID parameters.
+09/28/2022 07:59:00 PM p45033 collector :211  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 07:59:00 PM p45033 collector :185  INFO - Making request for Data_on_25th_By_User_ID
+09/28/2022 07:59:01 PM p45033 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:59:01 PM p45033 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_By_User_ID.json
+09/28/2022 07:59:01 PM p45033 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_By_User_ID.json.
+09/28/2022 07:59:01 PM p45033 collector :181  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_400 parameters.
+09/28/2022 07:59:01 PM p45033 collector :211  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 07:59:01 PM p45033 collector :185  INFO - Making request for Data_on_20th_By_User_ID_error_400
+09/28/2022 07:59:02 PM p45033 collector :81  ERROR - Invalid Request,One or more parameters to your request was invalid.
+09/28/2022 07:59:02 PM p45033 collector :86  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_400.json
+09/28/2022 07:59:02 PM p45033 collector :171  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_400.json.
+09/28/2022 07:59:02 PM p45033 collector :181  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_404 parameters.
+09/28/2022 07:59:02 PM p45033 collector :211  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 07:59:02 PM p45033 collector :185  INFO - Making request for Data_on_20th_By_User_ID_error_404
+09/28/2022 07:59:03 PM p45033 collector :74  INFO - Response is success with status code 200.
+09/28/2022 07:59:03 PM p45033 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_20th_By_User_ID_error_404.json
+09/28/2022 07:59:03 PM p45033 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_20th_By_User_ID_error_404.json.
+09/28/2022 08:01:57 PM p45596 log :13  INFO - Logging setup is done.
+09/28/2022 08:01:57 PM p45596 authentications :27  INFO - Loading env variables from env file
+09/28/2022 08:01:57 PM p45596 collector :181  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 08:01:57 PM p45596 collector :211  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 08:01:57 PM p45596 collector :185  INFO - Making request for Data_on_25th_Recent_tweets
+09/28/2022 08:01:58 PM p45596 collector :74  INFO - Response is success with status code 200.
+09/28/2022 08:01:58 PM p45596 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 08:01:58 PM p45596 collector :141  INFO - Created Directory:./Response_data
+09/28/2022 08:01:58 PM p45596 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 08:01:59 PM p45596 collector :74  INFO - Response is success with status code 200.
+09/28/2022 08:01:59 PM p45596 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 08:01:59 PM p45596 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 08:02:00 PM p45596 collector :74  INFO - Response is success with status code 200.
+09/28/2022 08:02:00 PM p45596 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 08:02:00 PM p45596 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 08:02:00 PM p45596 collector :181  INFO - Preparing to get data for Data_on_24th_Recent_tweets parameters.
+09/28/2022 08:02:00 PM p45596 collector :211  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 08:02:00 PM p45596 collector :185  INFO - Making request for Data_on_24th_Recent_tweets
+09/28/2022 08:02:01 PM p45596 collector :74  INFO - Response is success with status code 200.
+09/28/2022 08:02:01 PM p45596 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 08:02:01 PM p45596 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 08:02:03 PM p45596 collector :74  INFO - Response is success with status code 200.
+09/28/2022 08:02:03 PM p45596 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 08:02:03 PM p45596 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 08:02:03 PM p45596 collector :74  INFO - Response is success with status code 200.
+09/28/2022 08:02:03 PM p45596 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 08:02:03 PM p45596 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 08:02:03 PM p45596 collector :181  INFO - Preparing to get data for Data_on_25th_By_User_ID parameters.
+09/28/2022 08:02:03 PM p45596 collector :211  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 08:02:03 PM p45596 collector :185  INFO - Making request for Data_on_25th_By_User_ID
+09/28/2022 08:02:04 PM p45596 collector :74  INFO - Response is success with status code 200.
+09/28/2022 08:02:04 PM p45596 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_25th_By_User_ID.json
+09/28/2022 08:02:04 PM p45596 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_By_User_ID.json.
+09/28/2022 08:02:04 PM p45596 collector :181  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_400 parameters.
+09/28/2022 08:02:04 PM p45596 collector :211  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 08:02:04 PM p45596 collector :185  INFO - Making request for Data_on_20th_By_User_ID_error_400
+09/28/2022 08:02:05 PM p45596 collector :81  ERROR - Invalid Request,One or more parameters to your request was invalid.
+with https://api.twitter.com/2/users/dawdwf/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at
+09/28/2022 08:02:05 PM p45596 collector :86  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_400.json
+09/28/2022 08:02:05 PM p45596 collector :171  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_400.json.
+09/28/2022 08:02:05 PM p45596 collector :181  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_404 parameters.
+09/28/2022 08:02:05 PM p45596 collector :211  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 08:02:05 PM p45596 collector :185  INFO - Making request for Data_on_20th_By_User_ID_error_404
+09/28/2022 08:02:06 PM p45596 collector :74  INFO - Response is success with status code 200.
+09/28/2022 08:02:06 PM p45596 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_20th_By_User_ID_error_404.json
+09/28/2022 08:02:06 PM p45596 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_20th_By_User_ID_error_404.json.

@@ -78,7 +78,7 @@ class Collector:
             self.check_for_next_page_data()
         else:
             if sc in ERROR_CODE_LIST:
-                log.error(ERROR_CODE_LIST[sc])
+                log.error(ERROR_CODE_LIST[sc]+f'\nwith {self.url}')
                 file_path = f'{STORE_DIR}/failure_{self.current_key}.json'
             else:
                 log.error(UN_DEFINED_CODE + f'{sc, self.response.text}')
@@ -88,7 +88,7 @@ class Collector:
             self.data_fetch_pending = False
             self.next_token = ''
 
-    def write_response_to_file(self, file_path: str, mode=TEXT_WRITE, content_type=JSON) -> None:
+    def write_response_to_file(self, file_path: str, mode='W', content_type=JSON) -> None:
         """ Write received response to file
         Args:
             file_path (str): file path
@@ -216,7 +216,7 @@ class Collector:
          data in success response data
         """
         data = json.loads(self.response.text)
-        if NEXT_TOKEN in data[META]:
+        if META in data and NEXT_TOKEN in data[META]:
             self.next_token = data[META][NEXT_TOKEN]
         else:
             self.data_fetch_pending = False
