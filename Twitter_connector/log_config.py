@@ -1,6 +1,6 @@
 # log format list
 log_formats = {'f1': '%(asctime)s %(levelname)s - %(message)s',
-               'f2': '%(asctime)s p%(process)s %(module)s :%(lineno)d %(levelname)s - %(message)s'
+               'f2': '%(asctime)s p%(process)s %(module).15s :%(lineno)d  %(levelname)s - %(message)s'
                }
 log_format = log_formats['f2']
 # date format
@@ -16,4 +16,4 @@ log_levels = {'CRITICAL': 50,
               'INFO': 20,
               'DEBUG': 10,
               }
-log_level = log_levels['DEBUG']
+log_level = log_levels['INFO']

@@ -1,6 +1,8 @@
 # Standard library's
 import os
 import json
+import traceback
+
 # third party library's
 import requests
 # local library's
@@ -9,7 +11,8 @@ from authentications import Authentications
 from api_config import API_URL, PARAMS, STORE_DIR
 from std_log import (
     MAKEINGREQUEST, WRITEINGFILECOMPLETED, STROESUCCESSDATA, ERROR_CODE_LIST, SUCCESS_CODE_LIST,
-    CREATEDDIR, STROEFAILUREDATA, SETURLPATH)
+    CREATEDDIR, STROEFAILUREDATA, SETURLPATH, NEXT_TOKEN, META, JSON, DATA,
+    UN_DEFINED_CODE, JSON_DECODE_ERROR, EXCEPTION_OCCURRED)
 
 
 class Collector:
@@ -29,6 +32,8 @@ class Collector:
         self.current_key = ''
         self.method = ''
         self.url_path = ''
+        self.data_fetch_pending = True
+        self.next_token = ''
 
     def generate_querystring(self, param: dict) -> None:
         """Generate query string
@@ -70,13 +75,20 @@ class Collector:
             file_path = f'{STORE_DIR}/success_{self.current_key}.json'
             log.info(STROESUCCESSDATA + file_path)
             self.write_response_to_file(file_path=file_path)
-        elif sc in ERROR_CODE_LIST:
-            log.error(ERROR_CODE_LIST[sc])
-            file_path = f'{STORE_DIR}/failure_{self.current_key}.json'
+            self.check_for_next_page_data()
+        else:
+            if sc in ERROR_CODE_LIST:
+                log.error(ERROR_CODE_LIST[sc])
+                file_path = f'{STORE_DIR}/failure_{self.current_key}.json'
+            else:
+                log.error(UN_DEFINED_CODE + f'{sc, self.response.text}')
+                file_path = f'{STORE_DIR}/undefined_{self.current_key}.json'
             log.info(STROEFAILUREDATA + file_path)
             self.write_response_to_file(file_path=file_path)
+            self.data_fetch_pending = False
+            self.next_token = ''
 
-    def write_response_to_file(self, file_path: str, mode='w', content_type='json') -> None:
+    def write_response_to_file(self, file_path: str, mode=TEXT_WRITE, content_type=JSON) -> None:
         """ Write received response to file
         Args:
             file_path (str): file path
@@ -84,7 +96,24 @@ class Collector:
             content_type (str, optional): _description_. Defaults to 'text'.
         """
         text_content = ['html', 'json', 'yaml']
-        # bytes_content = ['jpg', 'png', 'zip', 'xls']
+        bytes_content = ['jpg', 'png', 'zip', 'xls']
+
+        def load_json_file() -> dict:
+            """ Loads json data from the response and 
+            handles Exceptions
+
+            Returns:
+                dict: response data that need to be stored
+            """
+            _data = {}
+            try:
+                _data = json.loads(self.response.text)
+            except json.decoder.JSONDecodeError:
+                log.error(JSON_DECODE_ERROR + f'for response {self.response}')
+            if DATA in _data:
+                return _data[DATA]
+            else:
+                return _data
 
         def get_data_to_write() -> str | dict | bytes:
             """Selecting data from Response object
@@ -92,13 +121,16 @@ class Collector:
             Returns:
                 request.response: response data
             """
-            if content_type in text_content:
-                if content_type == 'json':
-                    return json.loads(self.response.text)
+            try:
+                if content_type in text_content:
+                    if content_type == JSON:
+                        return load_json_file()
+                    else:
+                        return self.response.text
                 else:
-                    return self.response.text
-            else:
-                return self.response.content
+                    return self.response.content
+            except Exception as e:
+                log.error(EXCEPTION_OCCURRED + f'{traceback.print_tb()}')
 
         def check_for_file_dir_existence() -> None:
             """checking for dir exists, else create it
@@ -107,6 +139,19 @@ class Collector:
             if not os.path.exists(file_dir):
                 os.makedirs(file_dir)
                 log.info(CREATEDDIR + file_dir)
+
+        def select_mode() -> str:
+            """Selects mode of writing file based on file
+            existence and type of content need to be written
+
+            Returns:
+                str: mode of file writing
+            """
+            path_exists = os.path.exists(file_path)
+            if content_type in text_content:
+                return 'a' if path_exists else 'w'
+            elif content_type in bytes_content:
+                return 'ab' if path_exists else 'wb'
 
         def write_json_file(filepath: str, _mode: str, _data: dict) -> None:
             """ write json file
@@ -120,6 +165,7 @@ class Collector:
                 json.dump(_data, w_file, indent=4, sort_keys=True)
 
         data = get_data_to_write()
+        mode = select_mode()
         check_for_file_dir_existence()
         write_json_file(file_path, mode, data)
         log.info(WRITEINGFILECOMPLETED + file_path + '.')
@@ -136,12 +182,19 @@ class Collector:
             self.current_key = key
             self.method = value['method']
             self.set_url_path(val=value)
-            self.generate_querystring(
-                param=value['query_params'])
-            self.create_url()
             log.info(MAKEINGREQUEST + self.current_key)
-            self.make_request()
-            self.handles_response()
+            pages_limit = 0   # temp dev purpose, to not utilize complete rate limit
+            while self.data_fetch_pending and pages_limit <= 2:     # temp settings: taking only 2 next token request
+                pages_limit += 1
+                if self.next_token:
+                    value['query_params'][NEXT_TOKEN] = self.next_token
+                self.generate_querystring(param=value['query_params'])
+                self.create_url()
+                print(self.url)
+                self.make_request()
+                self.handles_response()
+            self.data_fetch_pending = True
+            self.next_token = ''
 
     def set_url_path(self, val: dict) -> None:
         """ Sets url path component as per config
@@ -156,6 +209,18 @@ class Collector:
             user_id = val['user_id']
             self.url_path = f'{path}/{user_id}/tweets'
         log.info(SETURLPATH + f' {search_type}')
+
+    def check_for_next_page_data(self) -> None:
+        """
+        Looking for next_token to get next page
+         data in success response data
+        """
+        data = json.loads(self.response.text)
+        if NEXT_TOKEN in data[META]:
+            self.next_token = data[META][NEXT_TOKEN]
+        else:
+            self.data_fetch_pending = False
+            self.next_token = ''
 
 
 if __name__ == '__main__':
