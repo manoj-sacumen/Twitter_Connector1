@@ -44,14 +44,14 @@ Data_on_20th_By_User_ID_error_404 = {
                          'user.fields': 'created_at',
                          }}
                          
-Data_on_20th_By_User_ID_error_404 = {'method': 'GET',
-                                      'search_type': 'By_User_ID',
-                                      'user_id': 123354,
-                                      'path': '/2/users',
-                                      'query_params': {'start_time': '2022-09-25T00:00:00Z',
-                                                      'end_time': '2022-09-26T00:00:00Z',
-                                                      'user.fields': 'created_at',
-                                                      }}
+# Data_on_20th_By_User_ID_error_404 = {'method': 'GET',
+#                                       'search_type': 'By_User_ID',
+#                                       'user_id': 123354,
+#                                       'path': '/2/users',
+#                                       'query_params': {'start_time': '2022-09-25T00:00:00Z',
+#                                                       'end_time': '2022-09-26T00:00:00Z',
+#                                                       'user.fields': 'created_at',
+#                                                       }}
 PARAMS = {
     # For Recent tweets Search
     'Data_on_25th_Recent_tweets': Data_on_25th_Recent_tweets,

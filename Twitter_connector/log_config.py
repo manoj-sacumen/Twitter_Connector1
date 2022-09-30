@@ -1,6 +1,6 @@
 # log format list
 log_formats = {'f1': '%(asctime)s %(levelname)s - %(message)s',
-               'f2': '%(asctime)s p%(process)s %(module).15s :%(lineno)d  %(levelname)s - %(message)s'
+               'f2': '%(asctime)s p%(process)s %(module).15s.py at line %(lineno)d  %(levelname)s - %(message)s'
                }
 log_format = log_formats['f2']
 # date format

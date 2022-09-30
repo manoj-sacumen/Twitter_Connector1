@@ -9,7 +9,7 @@ import requests
 from log import log
 from authentications import Authentications
 from api_config import API_URL, PARAMS, STORE_DIR
-from file_writer import File_Writer
+from file_writer import FileWriter
 from std_log import (
     MAKEINGREQUEST, STROESUCCESSDATA, ERROR_CODE_LIST, SUCCESS_CODE_LIST,
     STROEFAILUREDATA, SETURLPATH, NEXT_TOKEN, META,
@@ -25,7 +25,7 @@ class Collector:
         """
         self.auth = Authentications()
         self.auth_token = self.get_auth_token()
-        self.file_writer = File_Writer()
+        self.file_writer = FileWriter()
         self.headers = {'Authorization': self.auth_token}
         self.payload = {}
         self.querystring = ''

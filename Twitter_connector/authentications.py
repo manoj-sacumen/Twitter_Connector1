@@ -3,10 +3,9 @@ import os
 # third party library's
 from dotenv import load_dotenv
 # Local library's
-from log import log
-from std_log import (
-    GETAPIKEY, GETAPISECRETKEY, GETAPITOKEN, SETAPIKEY,
-    SETAPISECRETKEY, SETAPITOKEN, LOADENVFILE)
+from Twitter_connector.log import log
+from Twitter_connector.std_log import (
+    GETAPIKEY, GETAPISECRETKEY, GETAPITOKEN, LOADENVFILE)
 
 
 class Authentications:

@@ -6,17 +6,18 @@ import json
 # local library's
 from log import log
 from std_log import (
-    JSON, DATA, JSON_DECODE_ERROR, EXCEPTION_OCCURRED, CREATEDDIR, WRITEINGFILECOMPLETED)
+    JSON, DATA, JSON_DECODE_ERROR, EXCEPTION_OCCURRED, CREATEDDIR, WRITEINGFILECOMPLETED,
+    FILE_EXISTS_ERROR, TEXT_CONTENT, BYTES_CONTENT)
 
 
-class File_Writer:
+class FileWriter:
 
     def __init__(self):
         """File writer writes file
         currently writing response is main usage
         """
-        self.text_content = ['html', 'json', 'yaml']
-        self.bytes_content = ['jpg', 'png', 'zip', 'xls']
+        self.text_content = TEXT_CONTENT
+        self.bytes_content = BYTES_CONTENT
         self.mode = 'w'
         self.data = {}
         self.content_type = ''
@@ -62,16 +63,19 @@ class File_Writer:
         Args:
             path (str): path which need to be created
         """
-        os.makedirs(path,exist_ok=True)
-        log.info(CREATEDDIR + f' {path}')
+        try:
+            os.makedirs(path, exist_ok=True)
+            log.info(CREATEDDIR + f' {path}')
+        except FileExistsError as e:
+            log.error(FILE_EXISTS_ERROR + path)
 
-    def load_json_data(self) -> dict:
+    def load_response_text_in_json(self) -> dict:
         """ Loads json data from the response and 
         handles Exceptions
         Returns:
             dict: response data that need to be stored
         """
-
+        data = {}
         try:
             data = json.loads(self.response.text)
         except json.decoder.JSONDecodeError:
@@ -87,7 +91,7 @@ class File_Writer:
         try:
             if self.content_type in self.text_content:
                 if self.content_type == JSON:
-                    return self.load_json_data()
+                    return self.load_response_text_in_json()
                 else:
                     return self.response.text
             else:
@@ -122,7 +126,7 @@ class File_Writer:
         with open(self.file_path, mode=self.mode) as w_file:
             json.dump(self.data, w_file, indent=4, sort_keys=True)
 
-    def write_response_to_file(self, filepath, response, content_type) -> None:
+    def write_response_to_file(self, filepath: str, response: object, content_type: str) -> None:
         """Write received response to file
         Args:
             filepath (str): path of the file should be stored
@@ -131,13 +135,13 @@ class File_Writer:
         """
         try:
             self.sett(filepath=filepath, response=response,
-                    content_type=content_type)
+                      content_type=content_type)
             self.data = self.get_data_to_write()
             self.mode = self.select_mode()
             self.check_for_file_dir_existence()
             self.write_json_file()
             log.info(WRITEINGFILECOMPLETED + self.file_path + '.')
         except Exception as e:
-            log.error(EXCEPTION_OCCURRED,e)
+            log.error(EXCEPTION_OCCURRED, e)
         finally:
             self.reset()

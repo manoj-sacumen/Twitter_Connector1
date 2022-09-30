@@ -17,6 +17,7 @@ LOADENVFILE = 'Loading env variables from env file'
 # Error logs
 EXCEPTION_OCCURRED = 'An Un-handled Exception occurred at'
 JSON_DECODE_ERROR = 'Json Decoding failed '
+FILE_EXISTS_ERROR = 'An FileExistsError Exception raised for path: '
 # Critical logs
 
 
@@ -46,6 +47,8 @@ ERROR_CODE_LIST = {500: RESPONSE500,
 NEXT_TOKEN = 'next_token'
 META = 'meta'
 DATA = 'data'
+TEXT_CONTENT = ['text', 'html', 'json', 'yaml']
+BYTES_CONTENT = ['jpg', 'png', 'zip', 'xls']
 
 # file types
 JSON = 'json'
