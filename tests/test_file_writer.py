@@ -1,16 +1,35 @@
 # standard library's
-import requests
 import pytest
 import json
 import sys
 import os
 # third party library's
 import requests_mock
+import requests
 # local modules
-from .test_data.test_data import t_data
+from .test_data.test_data import test_data_file_writer as t_data
 from Twitter_connector.file_writer import FileWriter
 
 sys.path.append("./Twitter_connector")
+
+
+def create_response_obj(text_data='', status_code=200):
+    with requests_mock.Mocker() as m:
+        m.get('http://mock_path', text=text_data,
+              status_code=status_code)
+        return requests.get('http://mock_path')
+
+
+def get_test_input_data(func_name=''):
+    if not func_name:
+        func_name = sys._getframe(1).f_code.co_name
+    return t_data[func_name]['input']
+
+
+def get_test_output_data(func_name=''):
+    if not func_name:
+        func_name = sys._getframe(1).f_code.co_name
+    return t_data[func_name]['output']
 
 
 def check_for_initialized_state(fw, data):
@@ -86,37 +105,18 @@ def test_create_dirs_already_exists():
         print(f'Exception in test_create_dirs_already_exists in deleting dir', e)
 
 
-def create_response_obj(text_data='', status_code=200):
-    with requests_mock.Mocker() as m:
-        m.get('http://mock_path', text=text_data,
-              status_code=status_code)
-        return requests.get('http://mock_path')
-
-
-def get_test_input_data(func_name=''):
-    if not func_name:
-        func_name = sys._getframe(1).f_code.co_name
-    return t_data[func_name]['input']
-
-
-def get_test_output_data(func_name=''):
-    if not func_name:
-        func_name = sys._getframe(1).f_code.co_name
-    return t_data[func_name]['output']
-
-
-def test_load_response_text_in_json1():
+def test_load_response_text_in_json():
     """ Normal Behaviour"""
     # setup
-    input_data = get_test_input_data().path
-    expected_data = get_test_output_data().path
-    response_obj = create_response_obj(text_data=input_data())
+    input_path = get_test_input_data().path
+    expected_path = get_test_output_data().path
+    response_obj = create_response_obj(text_data=open(input_path).read())
     fw = FileWriter()
     fw.response = response_obj
     # test function
     data_loaded = fw.load_response_text_in_json()
     # asserting
-    assert str(data_loaded) == expected_data()
+    assert str(data_loaded) == open(expected_path).read()
 
 
 def test_load_response_text_in_json2():
@@ -210,3 +210,5 @@ def test_write_response_to_file():
                               content_type=input_data.content_type)
     expected_data = json.loads(open(input_data.file_path).read())
     assert expected_data['meta'] == 'only_meta_data'
+
+

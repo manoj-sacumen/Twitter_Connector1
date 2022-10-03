@@ -25,7 +25,7 @@ Data_on_25th_By_User_ID= {'method': 'GET',
                           'path': '/2/users',
                           'query_params': {'start_time': '2022-09-25T00:00:00Z',
                                           'end_time': '2022-09-26T00:00:00Z',
-                                          'user.fields': 'created_at'}}
+                                           'user.fields': 'created_at'}}
 Data_on_20th_By_User_ID_error_400= {'method': 'GET',
                                     'search_type': 'By_User_ID',
                                     'user_id': 'dawdwf',

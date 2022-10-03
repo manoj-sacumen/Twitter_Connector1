@@ -4,8 +4,8 @@ import json
 # third party library's
 
 # local library's
-from log import log
-from std_log import (
+from Twitter_connector.log import log
+from Twitter_connector.std_log import (
     JSON, DATA, JSON_DECODE_ERROR, EXCEPTION_OCCURRED, CREATEDDIR, WRITEINGFILECOMPLETED,
     FILE_EXISTS_ERROR, TEXT_CONTENT, BYTES_CONTENT)
 

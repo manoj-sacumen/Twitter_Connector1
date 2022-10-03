@@ -1,16 +1,16 @@
 # standard library's
-from requests import Response
 import sys
 import os
 # third party library's
 from box import Box
+from requests import Response
 # local modules
 from Twitter_connector.std_log import TEXT_CONTENT, BYTES_CONTENT
-
+from Twitter_connector.api_config import API_URL
 
 sys.path.append("./Twitter_connector")
 
-t_data = {
+test_data_file_writer = {
     'test_sett': {
         'input': {'file_path': 'test_path/test_file.json',
                   'content_type': 'json',
@@ -48,27 +48,116 @@ t_data = {
         'input': {'path': f'{os.path.dirname(__file__)}/temp1/temp2'},
         'output': {}
     },
-    'test_load_response_text_in_json1': {
-        'input': {'path': open('tests/test_data/load_response_text_in_json/1/input_data.json').read},
-        'output': {'path': open('tests/test_data/load_response_text_in_json/1/expected_data.txt').read}
+    'test_load_response_text_in_json': {
+        'input': {'path': 'tests/test_data/load_response_text_in_json/input_data.json'},
+        'output': {'path': 'tests/test_data/load_response_text_in_json/expected_data.txt'}
     },
-    'test_write_json_file':{
+    'test_write_json_file': {
         'input': {'data': 'tests/test_data/write_json_file/input_json_data.json',
                   'file_path': 'tests/test_data/write_json_file/output_json_data.json',
                   'mode': 'w'},
         'output': {}
     },
-    'test_write_response_to_file':{
+    'test_write_response_to_file': {
         'input': {'file_path': 'tests/test_data/write_json_file/output_json_data.json',
                   'content_type': 'json'},
-        'output': {}
+        'output': {},
+
+        # collector module start's
+
     }
-
-
-
-
-
 
 }
 
-t_data=Box(t_data)
+test_data_file_writer = Box(test_data_file_writer)
+test_data_collector = {
+    'test_collector': {
+        'input': {},
+        'output': {}
+    },
+    'test_generate_querystring': {
+        'input': {'query': 'India',
+                  'start_time': '2022-09-24T00:00:00Z',
+                  'end_time': '2022-09-24T01:00:00Z',
+                  'max_results': 10},
+        'output': 'query=India&start_time=2022-09-24T00:00:00Z&end_time=2022-09-24T01:00:00Z&max_results=10'
+    },
+    'test_create_url': {
+        'input': {'url_path': '/2/tweets/search/recent',
+                  'querystring': 'query=india&start_time=2022-09-29T00:00:00Z&end_time=2022-09-29T01:00:00Z'},
+        'output': {
+            'url': f'{API_URL}/2/tweets/search/recent?query=india&start_time=2022-09-29T00:00:00Z&end_time=2022-09-29T01:00:00Z'}
+    },
+    'test_get_auth_token': {
+        'input': {'test_token': 'test_token',
+                  'test_api_token': 'test_api_token'},
+        'output': {'auth_token': 'test_token test_api_token'}
+    },
+    'test_make_request': {
+        'input': {'method': 'GET',
+                  'url': f'{API_URL}/2/tweets/search/recent?query=India&max_results=10',
+                  'query': 'India',
+                  'max_results': 10},
+        'output': {}
+    },
+    'test_handles_response': {
+        'input': {'text_data': '{"data":{"text":"abcdefg"},"meta":{"next_token":"123456789"}}',
+                  },
+        'output': {200: {'text_data': {"text": "abcdefg"}, 'next_token': '123456789'},
+                   400: {'text_data': {"text": "abcdefg"}, 'next_token': ''},
+                   100: {'text_data': {"text": "abcdefg"}, 'next_token': ''}
+                   }
+
+    },
+    'test_set_url_path_By_User_ID': {
+        'input': {'param': {'search_type': 'By_User_ID',
+                            'user_id': 54829997,
+                            'path': '/2/users'}
+                  },
+        'output': {'url_path': '/2/users/54829997/tweets'}
+    },
+    'test_set_url_path_Recent_tweets': {
+        'input': {'param': {'search_type': 'Recent_tweets',
+                            'method': 'GET',
+                            'path': '/2/tweets/search/recent'}
+                  },
+        'output': {'url_path': '/2/tweets/search/recent'}
+    },
+    'test_check_for_next_page_data_with_next_token': {
+        'input': {'text_data': """{"meta": {"newest_id": "1575289156820815872",
+                                         "oldest_id": "1575287731236007936",
+                                         "result_count": 10,
+                                         "next_token": "b26v89c19zqg8o3fpzblrquj0fu4kt8gvruk1m3x2ctj1"}
+                                }""",
+                  },
+        'output': {'next_token': "b26v89c19zqg8o3fpzblrquj0fu4kt8gvruk1m3x2ctj1"}
+    },
+    'test_check_for_next_page_data_without_next_token': {
+        'input': {'text_data': """{"meta": {"newest_id": "1575289156820815872",
+                                         "oldest_id": "1575287731236007936",
+                                         "result_count": 10,
+                                         "token": "b26v89c19zqg8o3fpzblrquj0fu4kt8gvruk1m3x2ctj1"}
+                                }"""
+                  },
+        'output': {'next_token': ""}
+    },
+    'test_get_tweets': {
+        'input': {'params': {'Tweets_by_user_id_test': {'method': 'GET',
+                                                        'search_type': 'By_User_ID',
+                                                        'user_id': 1572527925186134016,
+                                                        'path': '/2/users',
+                                                        'query_params': {'max_results': 5,
+                                                                         'user.fields': 'created_at,id,name,username',
+                                                                         }
+                                                        }
+                             }
+                  },
+        'output': {'expected_msgs_id': ['1576837406841442305', '1576837598512676864', '1576837621912772609',
+                                        '1576837650786373633', '1576837677357277184', '1576837706495102976'],
+                   'next_token': '',
+                   'status_code':200,
+                   'file_path': './Response_data/success_Tweets_by_user_id_test.json'}
+    }
+
+}
+test_data_collector = Box(test_data_collector)

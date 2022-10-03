@@ -6,11 +6,11 @@ import traceback
 # third party library's
 import requests
 # local library's
-from log import log
-from authentications import Authentications
-from api_config import API_URL, PARAMS, STORE_DIR
-from file_writer import FileWriter
-from std_log import (
+from Twitter_connector.log import log
+from Twitter_connector.authentications import Authentications
+from Twitter_connector.api_config import API_URL, PARAMS, STORE_DIR
+from Twitter_connector.file_writer import FileWriter
+from Twitter_connector.std_log import (
     MAKEINGREQUEST, STROESUCCESSDATA, ERROR_CODE_LIST, SUCCESS_CODE_LIST,
     STROEFAILUREDATA, SETURLPATH, NEXT_TOKEN, META,
     UN_DEFINED_CODE)
@@ -111,7 +111,8 @@ class Collector:
             while self.data_fetch_pending and pages_limit <= 2:
                 pages_limit += 1
                 if self.next_token:
-                    value['query_params'][NEXT_TOKEN] = self.next_token
+                    token_key = 'pagination_token' if value['search_type']=='By_User_ID' else 'next_token'
+                    value['query_params'][token_key] = self.next_token
                 self.generate_querystring(param=value['query_params'])
                 self.create_url()
                 self.make_request()
@@ -146,7 +147,7 @@ class Collector:
             self.next_token = ''
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':              # pragma: no cover
     try:
         # Get tweets by recent search
         c1 = Collector()
