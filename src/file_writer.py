@@ -1,13 +1,12 @@
 """File writer module will provide capability to write the response to desired file in defined way."""
 import json
 import os
-from typing import Union
 
-import requests
+import requests  # type: ignore
 
 from src.log import log
-from src.std_log import (BYTES_CONTENT, CREATED_DIR, EXCEPTION_OCCURRED,
-                         FILE_EXISTS_ERROR, JSON_DECODE_ERROR, TEXT_CONTENT,
+from src.std_log import (BYTES_CONTENT, CREATED_DIR, FILE_EXISTS_ERROR,
+                         JSON_DECODE_ERROR, TEXT_CONTENT,
                          WRITING_FILE_COMPLETED)
 
 
@@ -38,7 +37,7 @@ class FileWriter:
 
     def reset(self) -> None:
         """Re setting the values of instance variable to initial values."""
-        self.__init__()     # type: ignore  # https://github.com/python/mypy/issues/13173
+        self.__init__()  # type: ignore  # https://github.com/python/mypy/issues/13173
 
     @staticmethod
     def path_exists(path) -> bool:
@@ -86,24 +85,18 @@ class FileWriter:
             data = json.loads(self.response.text)
         except json.decoder.JSONDecodeError:
             log.error(JSON_DECODE_ERROR, self.response)
-            # log.error(f'{JSON_DECODE_ERROR},{self.response}')
         return data.get('data', data)
 
-    def get_data_to_write(self) -> Union[str, dict, bytes]:
+    def get_data_to_write(self) -> dict:
         """Select data from Response object Based on content_type required.
 
         Returns:
             request.response: response data
         """
-        try:
-            if self.content_type in self.text_content:
-                if self.content_type == 'json':
-                    return self.load_response_text_in_json()
-                return self.response.text
-            return bytes(self.response.content)
-        except Exception as exception:
-            log.error(EXCEPTION_OCCURRED, str(exception))
-            return {}
+        if self.content_type in self.text_content:
+            if self.content_type == 'json':
+                return self.load_response_text_in_json()
+        return {}
 
     def check_for_file_dir_existence(self) -> None:
         """Check for dir exists, else create it."""
@@ -136,15 +129,11 @@ class FileWriter:
             response (response object): https response object.
             content_type (str): content type of data to be stored.
         """
-        try:
-            self.sett(filepath=filepath, response=response,
-                      content_type=content_type)
-            self.data = self.get_data_to_write()        # type: ignore
-            self.mode = self.select_mode()
-            self.check_for_file_dir_existence()
-            self.write_json_file()
-            log.info(WRITING_FILE_COMPLETED, str(self.file_path))
-        except Exception as exception:
-            log.error(EXCEPTION_OCCURRED, str(exception))
-        finally:
-            self.reset()
+        self.sett(filepath=filepath, response=response,
+                  content_type=content_type)
+        self.data = self.get_data_to_write()
+        self.mode = self.select_mode()
+        self.check_for_file_dir_existence()
+        self.write_json_file()
+        log.info(WRITING_FILE_COMPLETED, str(self.file_path))
+        self.reset()

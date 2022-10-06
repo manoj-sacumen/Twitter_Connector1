@@ -1,7 +1,7 @@
 """Collector module is the main module which will get data from Twitter API."""
 import json
 
-import requests
+import requests  # type: ignore
 
 from src.api_config import API_URL, PARAMS, STORE_DIR
 from src.authentications import Authentications
@@ -138,9 +138,6 @@ class Collector:
 
 
 if __name__ == '__main__':  # pragma: no cover
-    try:
-        # Get tweets by recent search
-        col = Collector()
-        col.get_tweets(PARAMS)
-    except Exception as exception:
-        log.error(exception)
+    # Get tweets by recent search
+    col = Collector()
+    col.get_tweets(PARAMS)

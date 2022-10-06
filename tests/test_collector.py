@@ -3,7 +3,7 @@ import json
 import os
 
 import pytest
-from requests import Response
+from requests import Response  # type: ignore
 
 from src.api_config import STORE_DIR
 from src.collector import Collector

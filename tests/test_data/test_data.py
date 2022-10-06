@@ -3,7 +3,7 @@ import os
 import sys
 
 from box import Box
-from requests import Response
+from requests import Response  # type: ignore
 
 from src.api_config import API_URL
 from src.std_log import BYTES_CONTENT, TEXT_CONTENT

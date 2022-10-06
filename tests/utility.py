@@ -2,7 +2,7 @@
 import os
 import sys
 
-import requests
+import requests  # type: ignore
 import requests_mock
 
 from tests.test_data.test_data import (test_data_collector,

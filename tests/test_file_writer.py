@@ -135,7 +135,8 @@ def test_load_response_text_in_json3():
                          [
                              pytest.param('text', '{}', id='text'),
                              pytest.param('json', {}, id='json'),
-                             pytest.param('zip', b'{}', id='bytes')
+                             pytest.param('zip', b'{}', id='bytes'),
+                             pytest.param('xml', '{}', id='xml')
                          ],
                          )
 def test_get_data_to_write(content_type, expected_content):
