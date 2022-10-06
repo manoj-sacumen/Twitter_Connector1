@@ -26,7 +26,7 @@ def test_create_url():
     col.url_path = input_data.url_path
     col.querystring = input_data.querystring
     col.create_url()
-    assert col.url == get_test_output_data().urlonly_meta_data
+    assert col.url == get_test_output_data().url
 
 
 def test_get_auth_token():
