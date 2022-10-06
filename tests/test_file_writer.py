@@ -1,144 +1,132 @@
-# standard library's
-import pytest
+"""test file writer file holds unittest cases for file writer module."""
+
 import json
-import sys
 import os
-# third party library's
-import requests_mock
-import requests
-# local modules
-from .test_data.test_data import test_data_file_writer as t_data
-from Twitter_connector.file_writer import FileWriter
+import sys
 
-sys.path.append("./Twitter_connector")
+import pytest
 
+from src.file_writer import FileWriter
+from tests.utility import (create_response_obj, get_test_input_data,
+                           get_test_output_data)
 
-def create_response_obj(text_data='', status_code=200):
-    with requests_mock.Mocker() as m:
-        m.get('http://mock_path', text=text_data,
-              status_code=status_code)
-        return requests.get('http://mock_path')
+sys.path.append("./src")
 
 
-def get_test_input_data(func_name=''):
-    if not func_name:
-        func_name = sys._getframe(1).f_code.co_name
-    return t_data[func_name]['input']
-
-
-def get_test_output_data(func_name=''):
-    if not func_name:
-        func_name = sys._getframe(1).f_code.co_name
-    return t_data[func_name]['output']
-
-
-def check_for_initialized_state(fw, data):
-    assert fw.text_content == data.text_content
-    assert fw.bytes_content == data.bytes_content
-    assert fw.mode == data.mode
-    assert fw.data == data.data
-    assert fw.content_type == data.content_type
-    assert fw.file_path == data.file_path
-    assert fw.response == data.response
+def check_for_initialized_state(file_writer, data):
+    """Act as helper function to check initialized state of class."""
+    assert file_writer.text_content == data.text_content
+    assert file_writer.bytes_content == data.bytes_content
+    assert file_writer.mode == data.mode
+    assert file_writer.data == data.data
+    assert file_writer.content_type == data.content_type
+    assert file_writer.file_path == data.file_path
+    assert file_writer.response == data.response
 
 
 def test_file_writer_initialization():
+    """Check for initialized state of the file_writer class."""
     data = get_test_input_data(func_name='initialized_state')
-    fw = FileWriter()
-    check_for_initialized_state(fw, data)
+    file_writer = FileWriter()
+    check_for_initialized_state(file_writer, data)
 
 
 def test_sett():
+    """Check for set functionality of file_writer."""
     data = get_test_input_data()
-    fw = FileWriter()
-    fw.sett(data.file_path, data.content_type, data.response)
+    file_writer = FileWriter()
+    file_writer.sett(data.file_path, data.content_type, data.response)
 
-    assert fw.file_path == data.file_path
-    assert fw.content_type == data.content_type
-    assert fw.response == data.response
+    assert file_writer.file_path == data.file_path
+    assert file_writer.content_type == data.content_type
+    assert file_writer.response == data.response
 
 
 def test_reset():
+    """Check for reset functionality of file_writer."""
     data = get_test_input_data(func_name='initialized_state')
-    fw = FileWriter()
-    fw.sett(filepath='./test/test.json', content_type='json', response='')
-    fw.reset()
-    check_for_initialized_state(fw, data)
+    file_writer = FileWriter()
+    file_writer.sett(filepath='./test/test.json', content_type='json', response='')
+    file_writer.reset()
+    check_for_initialized_state(file_writer, data)
 
 
 def test_path_exists_positive():
+    """Check for path exists utility function positive case."""
     path = get_test_input_data().path
-    fw = FileWriter()
-    assert fw.path_exists(path)
+    file_writer = FileWriter()
+    assert file_writer.path_exists(path)
 
 
 def test_path_exists_negative():
+    """Check for path exists utility function negative case."""
     path = get_test_input_data().path
-    fw = FileWriter()
-    assert not fw.path_exists(path)
+    file_writer = FileWriter()
+    assert not file_writer.path_exists(path)
 
 
 def test_get_parent_path():
+    """Check for functionality of getting parent directory path."""
     input_path = get_test_input_data().path
     output_path = get_test_output_data().path
-    fw = FileWriter()
-    assert output_path == fw.get_parent_path(input_path)
+    file_writer = FileWriter()
+    assert output_path == file_writer.get_parent_path(input_path)
 
 
 def test_create_dirs():
+    """Check for functionality of creating directory with non-existing path."""
     path = get_test_input_data().path
-    fw = FileWriter()
-    fw.create_dirs(path)
+    file_writer = FileWriter()
+    file_writer.create_dirs(path)
     assert os.path.exists(path)
 
 
 def test_create_dirs_already_exists():
+    """Check for functionality of creating directory with existing path."""
     path = get_test_input_data().path
     os.makedirs(path, exist_ok=True)
-    fw = FileWriter()
-    fw.create_dirs(path)
+    file_writer = FileWriter()
+    file_writer.create_dirs(path)
     assert os.path.exists(path)
-    try:
-        os.rmdir(path)
-        os.rmdir(os.path.dirname(path))
-    except Exception as e:
-        print(f'Exception in test_create_dirs_already_exists in deleting dir', e)
+    os.rmdir(path)
+    os.rmdir(os.path.dirname(path))
 
 
 def test_load_response_text_in_json():
-    """ Normal Behaviour"""
+    """Check for functionality of loading response text to json."""
     # setup
     input_path = get_test_input_data().path
     expected_path = get_test_output_data().path
     response_obj = create_response_obj(text_data=open(input_path).read())
-    fw = FileWriter()
-    fw.response = response_obj
+    file_writer = FileWriter()
+    file_writer.response = response_obj
     # test function
-    data_loaded = fw.load_response_text_in_json()
+    data_loaded = file_writer.load_response_text_in_json()
     # asserting
-    assert str(data_loaded) == open(expected_path).read()
+    expected_data = json.loads(open(expected_path).read())
+    assert data_loaded == expected_data
 
 
 def test_load_response_text_in_json2():
-    """ JSONDecodeError """
+    """Load of response text negative scenario which raises JSONDecodeError."""
     # setup
     response_obj = create_response_obj(text_data='{"data":"abcd"}{}')
-    fw = FileWriter()
-    fw.response = response_obj
+    file_writer = FileWriter()
+    file_writer.response = response_obj
     # test function
-    data_loaded = fw.load_response_text_in_json()
+    data_loaded = file_writer.load_response_text_in_json()
     # asserting
     assert data_loaded == {}
 
 
 def test_load_response_text_in_json3():
-    """ input data without data key """
+    """Load response text data without key data."""
     # setup
     response_obj = create_response_obj(text_data='{"meta":"only_meta_data"}')
-    fw = FileWriter()
-    fw.response = response_obj
+    file_writer = FileWriter()
+    file_writer.response = response_obj
     # test function
-    data_loaded = fw.load_response_text_in_json()
+    data_loaded = file_writer.load_response_text_in_json()
     # asserting
     assert data_loaded == {"meta": "only_meta_data"}
 
@@ -151,18 +139,19 @@ def test_load_response_text_in_json3():
                          ],
                          )
 def test_get_data_to_write(content_type, expected_content):
-    fw = FileWriter()
-    fw.response = create_response_obj(text_data='{}')
-    fw.content_type = content_type
-    assert expected_content == fw.get_data_to_write()
+    """Test functionality of selection of data from response object based on parameters."""
+    file_writer = FileWriter()
+    file_writer.response = create_response_obj(text_data='{}')
+    file_writer.content_type = content_type
+    assert expected_content == file_writer.get_data_to_write()
 
 
 def test_check_for_file_dir_existence():
-    """check_for_file_dir_existence else creating dir"""
-    path = 'tests/test_data/file_dir_existence/temp.log'
-    fw = FileWriter()
-    fw.file_path = path
-    fw.check_for_file_dir_existence()
+    """Test for parent dir of file existence else creating dir."""
+    path = get_test_input_data().path
+    file_writer = FileWriter()
+    file_writer.file_path = path
+    file_writer.check_for_file_dir_existence()
     dir_path = os.path.dirname(path)
     if os.path.exists(dir_path):
         os.rmdir(dir_path)
@@ -180,35 +169,36 @@ def test_check_for_file_dir_existence():
                                        'text', 'w', id='non_existing_text_file')
                           ])
 def test_select_mode(file_path, content_type, expected_mode):
-    fw = FileWriter()
-    fw.file_path = file_path
-    fw.content_type = content_type
-    assert expected_mode == fw.select_mode()
+    """Test for selecting mode based on the parameters passed."""
+    file_writer = FileWriter()
+    file_writer.file_path = file_path
+    file_writer.content_type = content_type
+    assert expected_mode == file_writer.select_mode()
 
 
 def test_write_json_file():
+    """Test for functionality which writes json file."""
     input_data = get_test_input_data()
-    fw = FileWriter()
-    fw.file_path = input_data.file_path
-    fw.mode = input_data.mode
-    fw.data = json.loads(open(input_data.data).read())
+    file_writer = FileWriter()
+    file_writer.file_path = input_data.file_path
+    file_writer.mode = input_data.mode
+    file_writer.data = json.loads(open(input_data.data).read())
     # function call
-    fw.write_json_file()
+    file_writer.write_json_file()
     # assert testing
-    written_data = json.loads(open(fw.file_path).read())
-    assert written_data['meta']['next_token'] == fw.data['meta']['next_token']
+    written_data = json.loads(open(file_writer.file_path).read())
+    assert written_data['meta']['next_token'] == file_writer.data['meta']['next_token']
     # tear up delete
-    os.remove(fw.file_path)
+    os.remove(file_writer.file_path)
 
 
 def test_write_response_to_file():
+    """Test for functionality which handles all steps in writing response to a file."""
     input_data = get_test_input_data()
-    fw = FileWriter()
+    file_writer = FileWriter()
     response = create_response_obj(text_data='{"meta":"only_meta_data"}')
-    fw.write_response_to_file(filepath=input_data.file_path,
-                              response=response,
-                              content_type=input_data.content_type)
+    file_writer.write_response_to_file(filepath=input_data.file_path,
+                                       response=response,
+                                       content_type=input_data.content_type)
     expected_data = json.loads(open(input_data.file_path).read())
     assert expected_data['meta'] == 'only_meta_data'
-
-

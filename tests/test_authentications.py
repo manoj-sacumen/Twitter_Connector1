@@ -3,12 +3,10 @@
 import os
 import sys
 
-# third party library's
-# local library's
-from Twitter_connector.authentications import Authentications
+from src.authentications import Authentications
 
 # needs better solution for relative import issue.
-sys.path.append("./Twitter_connector")
+sys.path.append("./src")
 auth = Authentications()
 
 
@@ -38,6 +36,5 @@ def test_load_env_file():
     # print(os.environ['TOKEN_TYPE'])
     auth.load_env_file()
     # still need to figure which method to test
-
 
 # set functionalities test cases will be written if auto key generation is possible.

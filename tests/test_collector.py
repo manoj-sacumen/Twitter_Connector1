@@ -1,84 +1,61 @@
-# Standard library's
-import os
-import sys
+"""test collection file holds unittest cases for collector module."""
 import json
+import os
 
 import pytest
-# third party library's
-import requests
-import requests_mock
 from requests import Response
-# local library's
-from Twitter_connector.collector import Collector
-from Twitter_connector.api_config import STORE_DIR
-from tests.test_data.test_data import test_data_collector as t_data
 
-
-def create_response_obj(text_data='', status_code=200):
-    with requests_mock.Mocker() as m:
-        m.get('http://mock_path', text=text_data,
-              status_code=status_code)
-        return requests.get('http://mock_path')
-
-
-def get_test_input_data(func_name=''):
-    if not func_name:
-        func_name = sys._getframe(1).f_code.co_name
-    return t_data[func_name]['input']
-
-
-def get_test_output_data(func_name=''):
-    if not func_name:
-        func_name = sys._getframe(1).f_code.co_name
-    return t_data[func_name]['output']
-
-
-def test_collector():
-    # don't know what to test
-    c = Collector()
+from src.api_config import STORE_DIR
+from src.collector import Collector
+from tests.utility import (create_response_obj, get_test_input_data,
+                           get_test_output_data)
 
 
 def test_generate_querystring():
+    """Test to check generation of query string from given parameters."""
     params = get_test_input_data()
-    c = Collector()
-    c.generate_querystring(params)
-    assert c.querystring == get_test_output_data()
+    col = Collector()
+    col.generate_querystring(params)
+    assert col.querystring == get_test_output_data()
 
 
 def test_create_url():
+    """Test to check creation of url from given parts of url."""
     input_data = get_test_input_data()
-    c = Collector()
-    c.url_path = input_data.url_path
-    c.querystring = input_data.querystring
-    c.create_url()
-    assert c.url == get_test_output_data().url
+    col = Collector()
+    col.url_path = input_data.url_path
+    col.querystring = input_data.querystring
+    col.create_url()
+    assert col.url == get_test_output_data().urlonly_meta_data
 
 
 def test_get_auth_token():
+    """Test to check functionality of getting authentication token from Env."""
     input_data = get_test_input_data()
     output_data = get_test_output_data()
     os.environ['TOKEN_TYPE'] = input_data.test_token
     os.environ['API_TOKEN'] = input_data.test_api_token
-    c = Collector()
-    assert c.get_auth_token() == output_data.auth_token
+    col = Collector()
+    assert col.get_auth_token() == output_data.auth_token
     # tear up
     del os.environ['TOKEN_TYPE']
     del os.environ['API_TOKEN']
 
 
-def test_make_request():
+def test_send_request():
+    """Test functionality which sends request to given url."""
     input_data = get_test_input_data()
-    c = Collector()
-    c.method = input_data.method
-    c.url = input_data.url
-    c.make_request()
-    assert isinstance(c.response, Response)
-    if c.response.status_code == 200:
-        assert input_data.query in c.response.text
-        json_data = json.loads(c.response.text)
+    col = Collector()
+    col.method = input_data.method
+    col.url = input_data.url
+    col.send_request()
+    assert isinstance(col.response, Response)
+    if col.response.status_code == 200:
+        assert input_data.query in col.response.text
+        json_data = json.loads(col.response.text)
         assert json_data['meta']['result_count'] <= input_data.max_results
     else:
-        print('Request Failed in test_make_request,', c.response)
+        print('Request Failed in test_send_request,', col.response)
 
 
 @pytest.mark.parametrize('status_code,fn_prefix',
@@ -89,15 +66,16 @@ def test_make_request():
                          ],
                          )
 def test_handles_response(status_code, fn_prefix):
+    """Test functionality which handles response for sent request."""
     output_data = get_test_output_data()[status_code]
     input_data = get_test_input_data()
-    c = Collector()
-    c.response = create_response_obj(text_data=input_data.text_data,
-                                     status_code=status_code)
-    c.current_key = f'test_handles_response_{status_code}'
-    c.handles_response()
+    col = Collector()
+    col.response = create_response_obj(text_data=input_data.text_data,
+                                       status_code=status_code)
+    col.current_key = f'test_handles_response_{status_code}'
+    col.handles_response()
     # success file written with data content
-    file_path = f'{STORE_DIR}/{fn_prefix}{c.current_key}.json'
+    file_path = f'{STORE_DIR}/{fn_prefix}{col.current_key}.json'
     if os.path.exists(file_path):
         content = open(file_path).read()
         # Note: when file is appended, content will not be in proper format so raises error
@@ -107,52 +85,57 @@ def test_handles_response(status_code, fn_prefix):
     else:
         assert False
     # next token data taken
-    assert c.next_token == output_data.next_token
+    assert col.next_token == output_data.next_token
 
 
-def test_set_url_path_By_User_ID():
+def test_set_url_path_by_user_id():
+    """Test selecting of url path for requests done based on user id."""
     input_data = get_test_input_data()
     output_data = get_test_output_data()
-    c = Collector()
-    c.set_url_path(val=input_data.param)
-    assert c.url_path == output_data.url_path
+    col = Collector()
+    col.set_url_path(val=input_data.param)
+    assert col.url_path == output_data.url_path
 
 
-def test_set_url_path_Recent_tweets():
+def test_set_url_path_recent_tweets():
+    """Test selecting of url path for requests done based on recent tweets."""
     input_data = get_test_input_data()
     output_data = get_test_output_data()
-    c = Collector()
-    c.set_url_path(val=input_data.param)
-    assert c.url_path == output_data.url_path
+    col = Collector()
+    col.set_url_path(val=input_data.param)
+    assert col.url_path == output_data.url_path
 
 
 def test_check_for_next_page_data_with_next_token():
+    """Test functionality which parse response to get next token for valid scenario."""
     input_data = get_test_input_data()
     output_data = get_test_output_data()
-    c =Collector()
-    c.response = create_response_obj(text_data=input_data.text_data,
-                                     status_code=200)
-    c.check_for_next_page_data()
-    assert c.next_token == output_data.next_token
+    col = Collector()
+    col.response = create_response_obj(text_data=input_data.text_data,
+                                       status_code=200)
+    col.check_for_next_page_data()
+    assert col.next_token == output_data.next_token
 
 
 def test_check_for_next_page_data_without_next_token():
+    """Test functionality which parse response to get next token for in-valid scenario."""
     input_data = get_test_input_data()
     output_data = get_test_output_data()
-    c = Collector()
-    c.response = create_response_obj(text_data=input_data.text_data,
-                                     status_code=200)
-    c.check_for_next_page_data()
-    assert c.next_token == output_data.next_token
+    col = Collector()
+    col.response = create_response_obj(text_data=input_data.text_data,
+                                       status_code=200)
+    col.check_for_next_page_data()
+    assert col.next_token == output_data.next_token
 
 
 def test_get_tweets():
+    """Test get tweets functionality which acts as main actuator."""
     input_data = get_test_input_data()
     output_data = get_test_output_data()
-    c= Collector()
-    c.get_tweets(input_data.params)
+    col = Collector()
+    col.get_tweets(input_data.params)
     print()
-    assert c.response.status_code == output_data.status_code
+    assert col.response.status_code == output_data.status_code
     file_path = output_data.file_path
     if os.path.exists(file_path):
         content = open(file_path).read()
@@ -161,7 +144,4 @@ def test_get_tweets():
                 assert False
     else:
         assert False
-    assert c.next_token == output_data.next_token
-
-
-
+    assert col.next_token == output_data.next_token

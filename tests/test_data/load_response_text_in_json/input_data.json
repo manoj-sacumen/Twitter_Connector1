@@ -1,17 +1,17 @@
 {
-    "data": [
-        {
-            "edit_history_tweet_ids": [
-                "1575289156820815872"
-            ],
-            "id": "1575289156820815872",
-            "text": "This is sample text content"
-        }
-    ],
-    "meta": {
-        "newest_id": "1575289156820815872",
-        "oldest_id": "1575287731236007936",
-        "result_count": 10,
-        "next_token": "b26v89c19zqg8o3fpzblrquj0fu4kt8gvruk1m3x2ctj1"
+  "data": [
+    {
+      "edit_history_tweet_ids": [
+        "1575289156820815872"
+      ],
+      "id": "1575289156820815872",
+      "text": "This is sample text content"
     }
+  ],
+  "meta": {
+    "newest_id": "1575289156820815872",
+    "next_token": "b26v89c19zqg8o3fpzblrquj0fu4kt8gvruk1m3x2ctj1",
+    "oldest_id": "1575287731236007936",
+    "result_count": 10
+  }
 }

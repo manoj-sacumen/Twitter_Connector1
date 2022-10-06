@@ -1,14 +1,14 @@
-# standard library's
-import sys
+"""Test data file holds the input and output data required to run test cases."""
 import os
-# third party library's
+import sys
+
 from box import Box
 from requests import Response
-# local modules
-from Twitter_connector.std_log import TEXT_CONTENT, BYTES_CONTENT
-from Twitter_connector.api_config import API_URL
 
-sys.path.append("./Twitter_connector")
+from src.api_config import API_URL
+from src.std_log import BYTES_CONTENT, TEXT_CONTENT
+
+sys.path.append("./src")
 
 test_data_file_writer = {
     'test_sett': {
@@ -62,19 +62,16 @@ test_data_file_writer = {
         'input': {'file_path': 'tests/test_data/write_json_file/output_json_data.json',
                   'content_type': 'json'},
         'output': {},
-
-        # collector module start's
-
+    },
+    'test_check_for_file_dir_existence': {
+        'input': {'path': 'tests/test_data/file_dir_existence/temp.log'},
+        'output': {}
     }
 
 }
 
 test_data_file_writer = Box(test_data_file_writer)
 test_data_collector = {
-    'test_collector': {
-        'input': {},
-        'output': {}
-    },
     'test_generate_querystring': {
         'input': {'query': 'India',
                   'start_time': '2022-09-24T00:00:00Z',
@@ -93,7 +90,7 @@ test_data_collector = {
                   'test_api_token': 'test_api_token'},
         'output': {'auth_token': 'test_token test_api_token'}
     },
-    'test_make_request': {
+    'test_send_request': {
         'input': {'method': 'GET',
                   'url': f'{API_URL}/2/tweets/search/recent?query=India&max_results=10',
                   'query': 'India',
@@ -109,14 +106,14 @@ test_data_collector = {
                    }
 
     },
-    'test_set_url_path_By_User_ID': {
+    'test_set_url_path_by_user_id': {
         'input': {'param': {'search_type': 'By_User_ID',
                             'user_id': 54829997,
                             'path': '/2/users'}
                   },
         'output': {'url_path': '/2/users/54829997/tweets'}
     },
-    'test_set_url_path_Recent_tweets': {
+    'test_set_url_path_recent_tweets': {
         'input': {'param': {'search_type': 'Recent_tweets',
                             'method': 'GET',
                             'path': '/2/tweets/search/recent'}
@@ -155,7 +152,7 @@ test_data_collector = {
         'output': {'expected_msgs_id': ['1576837406841442305', '1576837598512676864', '1576837621912772609',
                                         '1576837650786373633', '1576837677357277184', '1576837706495102976'],
                    'next_token': '',
-                   'status_code':200,
+                   'status_code': 200,
                    'file_path': './Response_data/success_Tweets_by_user_id_test.json'}
     }
 
