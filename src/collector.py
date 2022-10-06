@@ -19,14 +19,14 @@ class Collector:
     def __init__(self) -> None:
         """Collector will be sending requests to External resources."""
         """Request will be sent with the help of auth and config modules and received data will be stored."""
-        self.auth: object = Authentications()
+        self.auth: Authentications = Authentications()
         self.auth_token: str = self.get_auth_token()
-        self.file_writer: object = FileWriter()
+        self.file_writer: FileWriter = FileWriter()
         self.headers: dict = {'Authorization': self.auth_token}
         self.payload: dict = {}
         self.querystring: str = ''
         self.url: str = ''
-        self.response: requests.Response() = None
+        self.response: requests.Response = requests.Response()
         self.current_key: str = ''
         self.method: str = ''
         self.url_path: str = ''
@@ -78,7 +78,7 @@ class Collector:
                 log.error(ERROR_CODE_LIST[status_code] + f'\nwith {self.url}')
                 file_path = f'{STORE_DIR}/failure_{self.current_key}.json'
             else:
-                log.error(UN_DEFINED_CODE % (str(status_code), str(self.response.text)))
+                log.error(UN_DEFINED_CODE, (str(status_code), str(self.response.text)))
                 file_path = f'{STORE_DIR}/undefined_{self.current_key}.json'
             log.info(STORE_FAILURE_DATA, file_path)
             self.file_writer.write_response_to_file(
@@ -93,11 +93,11 @@ class Collector:
             params (dict): holds request parameters details
         """
         for key, value in params.items():
-            log.info(PREPARING_TO_GET_DATA % (key))
+            log.info(PREPARING_TO_GET_DATA, str(key))
             self.current_key = key
             self.method = value['method']
             self.set_url_path(val=value)
-            log.info(MAKING_REQUEST + self.current_key)
+            log.info(MAKING_REQUEST, str(self.current_key))
             pages_limit = 0  # temp dev purpose, to not utilize complete rate limit
             # temp settings: taking only 2 next token request
             while self.data_fetch_pending and pages_limit <= 2:
@@ -125,7 +125,7 @@ class Collector:
         elif search_type == 'By_User_ID':  # specific settings
             user_id = val['user_id']
             self.url_path = '{}/{}/tweets'.format(str(path), str(user_id))
-        log.info(SET_URL_PATH + search_type)
+        log.info(SET_URL_PATH, str(search_type))
 
     def check_for_next_page_data(self) -> None:
         """Look for next_token to get next page data in success response."""

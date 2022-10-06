@@ -3,6 +3,8 @@ import json
 import os
 from typing import Union
 
+import requests
+
 from src.log import log
 from src.std_log import (BYTES_CONTENT, CREATED_DIR, EXCEPTION_OCCURRED,
                          FILE_EXISTS_ERROR, JSON_DECODE_ERROR, TEXT_CONTENT,
@@ -20,7 +22,7 @@ class FileWriter:
         self.data: dict = {}
         self.content_type: str = ''
         self.file_path: str = ''
-        self.response: object = None
+        self.response: requests.Response = None
 
     def sett(self, filepath, content_type, response) -> None:
         """Set parameter variables to instance variables.
@@ -36,7 +38,7 @@ class FileWriter:
 
     def reset(self) -> None:
         """Re setting the values of instance variable to initial values."""
-        self.__init__()
+        self.__init__()     # type: ignore  # https://github.com/python/mypy/issues/13173
 
     @staticmethod
     def path_exists(path) -> bool:
@@ -69,7 +71,7 @@ class FileWriter:
         """
         try:
             os.makedirs(path, exist_ok=True)
-            log.info(CREATED_DIR + f' {path}')
+            log.info(f'{CREATED_DIR}:{path}'.format(CREATED_DIR=CREATED_DIR, path=path))
         except FileExistsError as exception:
             log.error(FILE_EXISTS_ERROR + path + exception)
 
@@ -83,7 +85,8 @@ class FileWriter:
         try:
             data = json.loads(self.response.text)
         except json.decoder.JSONDecodeError:
-            log.error(JSON_DECODE_ERROR + f'for response {self.response}')
+            log.error(JSON_DECODE_ERROR, self.response)
+            # log.error(f'{JSON_DECODE_ERROR},{self.response}')
         return data.get('data', data)
 
     def get_data_to_write(self) -> Union[str, dict, bytes]:
@@ -99,7 +102,7 @@ class FileWriter:
                 return self.response.text
             return bytes(self.response.content)
         except Exception as exception:
-            log.error(EXCEPTION_OCCURRED % (exception))
+            log.error(EXCEPTION_OCCURRED, str(exception))
             return {}
 
     def check_for_file_dir_existence(self) -> None:
@@ -107,7 +110,7 @@ class FileWriter:
         file_dir = self.get_parent_path(self.file_path)
         if not self.path_exists(file_dir):
             self.create_dirs(file_dir)
-            log.info(CREATED_DIR % (file_dir))
+            log.info(CREATED_DIR, str(file_dir))
 
     def select_mode(self) -> str:
         """Select mode of writing file based on file existence and type of content need to be written.
@@ -136,12 +139,12 @@ class FileWriter:
         try:
             self.sett(filepath=filepath, response=response,
                       content_type=content_type)
-            self.data = self.get_data_to_write()
+            self.data = self.get_data_to_write()        # type: ignore
             self.mode = self.select_mode()
             self.check_for_file_dir_existence()
             self.write_json_file()
-            log.info(WRITING_FILE_COMPLETED % (self.file_path))
+            log.info(WRITING_FILE_COMPLETED, str(self.file_path))
         except Exception as exception:
-            log.error(EXCEPTION_OCCURRED % str(exception))
+            log.error(EXCEPTION_OCCURRED, str(exception))
         finally:
             self.reset()
