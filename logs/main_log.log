@@ -1166,3 +1166,328 @@ with https://api.twitter.com/2/users/dawdwf/tweets?start_time=2022-09-25T00:00:0
 09/28/2022 08:02:06 PM p45596 collector :74  INFO - Response is success with status code 200.
 09/28/2022 08:02:06 PM p45596 collector :76  INFO - Storing successful data in./Response_data/success_Data_on_20th_By_User_ID_error_404.json
 09/28/2022 08:02:06 PM p45596 collector :171  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_20th_By_User_ID_error_404.json.
+09/28/2022 09:10:22 PM p54899 log :13  INFO - Logging setup is done.
+09/28/2022 09:10:22 PM p54899 authentications :27  INFO - Loading env variables from env file
+09/28/2022 09:10:22 PM p54899 collector :104  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 09:10:22 PM p54899 collector :134  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 09:10:22 PM p54899 collector :108  INFO - Making request for Data_on_25th_Recent_tweets
+09/28/2022 09:10:23 PM p54899 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:10:23 PM p54899 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 09:12:03 PM p55108 log :13  INFO - Logging setup is done.
+09/28/2022 09:12:03 PM p55108 authentications :27  INFO - Loading env variables from env file
+09/28/2022 09:12:03 PM p55108 collector :104  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 09:12:03 PM p55108 collector :134  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 09:12:03 PM p55108 collector :108  INFO - Making request for Data_on_25th_Recent_tweets
+09/28/2022 09:12:03 PM p55108 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:12:03 PM p55108 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 09:12:03 PM p55108 collector :155  ERROR - 'File_Writer' object has no attribute 'content'
+09/28/2022 09:12:17 PM p55165 log :13  INFO - Logging setup is done.
+09/28/2022 09:12:17 PM p55165 authentications :27  INFO - Loading env variables from env file
+09/28/2022 09:12:17 PM p55165 collector :104  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 09:12:17 PM p55165 collector :134  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 09:12:17 PM p55165 collector :108  INFO - Making request for Data_on_25th_Recent_tweets
+09/28/2022 09:12:18 PM p55165 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:12:18 PM p55165 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 09:12:18 PM p55165 collector :155  ERROR - 'File_Writer' object has no attribute 'content'
+09/28/2022 09:12:48 PM p55251 log :13  INFO - Logging setup is done.
+09/28/2022 09:12:48 PM p55251 authentications :27  INFO - Loading env variables from env file
+09/28/2022 09:12:48 PM p55251 collector :104  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 09:12:48 PM p55251 collector :134  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 09:12:48 PM p55251 collector :108  INFO - Making request for Data_on_25th_Recent_tweets
+09/28/2022 09:12:49 PM p55251 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:12:49 PM p55251 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 09:12:49 PM p55251 collector :155  ERROR - 'File_Writer' object has no attribute 'content'
+09/28/2022 09:13:23 PM p55337 log :13  INFO - Logging setup is done.
+09/28/2022 09:13:23 PM p55337 authentications :27  INFO - Loading env variables from env file
+09/28/2022 09:13:23 PM p55337 collector :104  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 09:13:23 PM p55337 collector :134  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 09:13:23 PM p55337 collector :108  INFO - Making request for Data_on_25th_Recent_tweets
+09/28/2022 09:13:24 PM p55337 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:13:24 PM p55337 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 09:13:24 PM p55337 collector :156  ERROR - 'File_Writer' object has no attribute 'content'
+09/28/2022 09:14:23 PM p55432 log :13  INFO - Logging setup is done.
+09/28/2022 09:14:23 PM p55432 authentications :27  INFO - Loading env variables from env file
+09/28/2022 09:14:23 PM p55432 collector :104  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 09:14:23 PM p55432 collector :134  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 09:14:23 PM p55432 collector :108  INFO - Making request for Data_on_25th_Recent_tweets
+09/28/2022 09:14:23 PM p55432 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:14:23 PM p55432 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 09:14:23 PM p55432 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 09:14:24 PM p55432 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:14:24 PM p55432 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 09:14:24 PM p55432 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 09:14:25 PM p55432 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:14:25 PM p55432 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 09:14:25 PM p55432 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 09:14:25 PM p55432 collector :104  INFO - Preparing to get data for Data_on_24th_Recent_tweets parameters.
+09/28/2022 09:14:25 PM p55432 collector :134  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 09:14:25 PM p55432 collector :108  INFO - Making request for Data_on_24th_Recent_tweets
+09/28/2022 09:14:26 PM p55432 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:14:26 PM p55432 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 09:14:26 PM p55432 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 09:14:27 PM p55432 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:14:27 PM p55432 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 09:14:27 PM p55432 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 09:14:27 PM p55432 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:14:27 PM p55432 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 09:14:27 PM p55432 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 09:14:27 PM p55432 collector :104  INFO - Preparing to get data for Data_on_25th_By_User_ID parameters.
+09/28/2022 09:14:27 PM p55432 collector :134  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 09:14:27 PM p55432 collector :108  INFO - Making request for Data_on_25th_By_User_ID
+09/28/2022 09:14:28 PM p55432 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:14:28 PM p55432 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_By_User_ID.json
+09/28/2022 09:14:28 PM p55432 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_By_User_ID.json.
+09/28/2022 09:14:28 PM p55432 collector :104  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_400 parameters.
+09/28/2022 09:14:28 PM p55432 collector :134  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 09:14:28 PM p55432 collector :108  INFO - Making request for Data_on_20th_By_User_ID_error_400
+09/28/2022 09:14:28 PM p55432 collector :85  ERROR - Invalid Request,One or more parameters to your request was invalid.
+with https://api.twitter.com/2/users/dawdwf/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at
+09/28/2022 09:14:28 PM p55432 collector :90  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_400.json
+09/28/2022 09:14:28 PM p55432 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_400.json.
+09/28/2022 09:14:28 PM p55432 collector :104  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_404 parameters.
+09/28/2022 09:14:28 PM p55432 collector :134  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 09:14:28 PM p55432 collector :108  INFO - Making request for Data_on_20th_By_User_ID_error_404
+09/28/2022 09:14:29 PM p55432 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:14:29 PM p55432 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_20th_By_User_ID_error_404.json
+09/28/2022 09:14:29 PM p55432 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_20th_By_User_ID_error_404.json.
+09/28/2022 09:16:40 PM p55655 log :13  INFO - Logging setup is done.
+09/28/2022 09:16:40 PM p55655 authentications :27  INFO - Loading env variables from env file
+09/28/2022 09:16:40 PM p55655 collector :104  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/28/2022 09:16:40 PM p55655 collector :134  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 09:16:40 PM p55655 collector :108  INFO - Making request for Data_on_25th_Recent_tweets
+09/28/2022 09:16:45 PM p55655 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:16:45 PM p55655 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 09:16:45 PM p55655 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 09:17:16 PM p55655 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:17:16 PM p55655 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 09:17:16 PM p55655 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 09:17:22 PM p55655 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:17:22 PM p55655 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/28/2022 09:17:22 PM p55655 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/28/2022 09:17:22 PM p55655 collector :104  INFO - Preparing to get data for Data_on_24th_Recent_tweets parameters.
+09/28/2022 09:17:22 PM p55655 collector :134  INFO - Setting URL path done for search type: Recent_tweets
+09/28/2022 09:17:22 PM p55655 collector :108  INFO - Making request for Data_on_24th_Recent_tweets
+09/28/2022 09:17:27 PM p55655 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:17:27 PM p55655 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 09:17:27 PM p55655 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 09:17:29 PM p55655 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:17:29 PM p55655 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 09:17:29 PM p55655 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 09:17:33 PM p55655 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:17:33 PM p55655 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/28/2022 09:17:33 PM p55655 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/28/2022 09:17:33 PM p55655 collector :104  INFO - Preparing to get data for Data_on_25th_By_User_ID parameters.
+09/28/2022 09:17:33 PM p55655 collector :134  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 09:17:33 PM p55655 collector :108  INFO - Making request for Data_on_25th_By_User_ID
+09/28/2022 09:17:34 PM p55655 collector :77  INFO - Response is success with status code 200.
+09/28/2022 09:17:34 PM p55655 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_By_User_ID.json
+09/28/2022 09:17:34 PM p55655 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_By_User_ID.json.
+09/28/2022 09:17:34 PM p55655 collector :104  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_400 parameters.
+09/28/2022 09:17:34 PM p55655 collector :134  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 09:17:34 PM p55655 collector :108  INFO - Making request for Data_on_20th_By_User_ID_error_400
+09/28/2022 09:17:53 PM p55655 collector :85  ERROR - Invalid Request,One or more parameters to your request was invalid.
+with https://api.twitter.com/2/users/dawdwf/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at
+09/28/2022 09:17:53 PM p55655 collector :90  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_400.json
+09/28/2022 09:17:53 PM p55655 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_400.json.
+09/28/2022 09:17:53 PM p55655 collector :104  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_404 parameters.
+09/28/2022 09:17:53 PM p55655 collector :134  INFO - Setting URL path done for search type: By_User_ID
+09/28/2022 09:17:53 PM p55655 collector :108  INFO - Making request for Data_on_20th_By_User_ID_error_404
+09/29/2022 11:04:13 AM p8479 log :13  INFO - Logging setup is done.
+09/29/2022 11:17:56 AM p10195 log :13  INFO - Logging setup is done.
+09/29/2022 11:18:40 AM p10306 log :13  INFO - Logging setup is done.
+09/29/2022 11:18:53 AM p10355 log :13  INFO - Logging setup is done.
+09/29/2022 11:19:36 AM p10559 log :13  INFO - Logging setup is done.
+09/29/2022 11:23:46 AM p11238 log :13  INFO - Logging setup is done.
+09/29/2022 11:40:09 AM p13583 log :13  INFO - Logging setup is done.
+09/29/2022 11:40:09 AM p13583 authentications :27  INFO - Loading env variables from env file
+09/29/2022 11:40:12 AM p13607 log :13  INFO - Logging setup is done.
+09/29/2022 11:40:12 AM p13607 authentications :27  INFO - Loading env variables from env file
+09/30/2022 12:52:38 PM p15271 log :13  INFO - Logging setup is done.
+09/30/2022 12:52:38 PM p15271 authentications :27  INFO - Loading env variables from env file
+09/30/2022 12:52:38 PM p15271 collector :104  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/30/2022 12:52:38 PM p15271 collector :134  INFO - Setting URL path done for search type: Recent_tweets
+09/30/2022 12:52:38 PM p15271 collector :108  INFO - Making request for Data_on_25th_Recent_tweets
+09/30/2022 12:52:39 PM p15271 collector :77  INFO - Response is success with status code 200.
+09/30/2022 12:52:39 PM p15271 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/30/2022 12:52:39 PM p15271 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/30/2022 12:52:40 PM p15271 collector :77  INFO - Response is success with status code 200.
+09/30/2022 12:52:40 PM p15271 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/30/2022 12:52:40 PM p15271 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/30/2022 12:52:40 PM p15271 collector :77  INFO - Response is success with status code 200.
+09/30/2022 12:52:40 PM p15271 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/30/2022 12:52:40 PM p15271 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/30/2022 12:52:40 PM p15271 collector :104  INFO - Preparing to get data for Data_on_24th_Recent_tweets parameters.
+09/30/2022 12:52:40 PM p15271 collector :134  INFO - Setting URL path done for search type: Recent_tweets
+09/30/2022 12:52:40 PM p15271 collector :108  INFO - Making request for Data_on_24th_Recent_tweets
+09/30/2022 12:52:41 PM p15271 collector :77  INFO - Response is success with status code 200.
+09/30/2022 12:52:41 PM p15271 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/30/2022 12:52:41 PM p15271 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/30/2022 12:52:43 PM p15271 collector :77  INFO - Response is success with status code 200.
+09/30/2022 12:52:43 PM p15271 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/30/2022 12:52:43 PM p15271 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/30/2022 12:52:44 PM p15271 collector :77  INFO - Response is success with status code 200.
+09/30/2022 12:52:44 PM p15271 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/30/2022 12:52:44 PM p15271 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/30/2022 12:52:44 PM p15271 collector :104  INFO - Preparing to get data for Data_on_25th_By_User_ID parameters.
+09/30/2022 12:52:44 PM p15271 collector :134  INFO - Setting URL path done for search type: By_User_ID
+09/30/2022 12:52:44 PM p15271 collector :108  INFO - Making request for Data_on_25th_By_User_ID
+09/30/2022 12:52:44 PM p15271 collector :77  INFO - Response is success with status code 200.
+09/30/2022 12:52:44 PM p15271 collector :79  INFO - Storing successful data in./Response_data/success_Data_on_25th_By_User_ID.json
+09/30/2022 12:52:44 PM p15271 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_By_User_ID.json.
+09/30/2022 12:52:44 PM p15271 collector :104  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_400 parameters.
+09/30/2022 12:52:44 PM p15271 collector :134  INFO - Setting URL path done for search type: By_User_ID
+09/30/2022 12:52:44 PM p15271 collector :108  INFO - Making request for Data_on_20th_By_User_ID_error_400
+09/30/2022 12:52:45 PM p15271 collector :85  ERROR - Invalid Request,One or more parameters to your request was invalid.
+with https://api.twitter.com/2/users/dawdwf/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at
+09/30/2022 12:52:45 PM p15271 collector :90  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_400.json
+09/30/2022 12:52:45 PM p15271 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_400.json.
+09/30/2022 12:52:45 PM p15271 collector :104  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_404 parameters.
+09/30/2022 12:52:45 PM p15271 collector :134  INFO - Setting URL path done for search type: By_User_ID
+09/30/2022 12:52:45 PM p15271 collector :108  INFO - Making request for Data_on_20th_By_User_ID_error_404
+09/30/2022 12:52:45 PM p15271 collector :85  ERROR - Resource Not Found
+with https://api.twitter.com/2/userss/123354/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at
+09/30/2022 12:52:45 PM p15271 collector :90  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_404.json
+09/30/2022 12:52:45 PM p15271 file_writer :78  ERROR - Json Decoding failed for response <Response [404]>
+09/30/2022 12:52:45 PM p15271 file_writer :139  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_404.json.
+09/30/2022 03:52:29 PM p31091 log at line 13  INFO - Logging setup is done.
+09/30/2022 03:53:02 PM p31162 log .py at line 13  INFO - Logging setup is done.
+09/30/2022 03:53:13 PM p31179 log.py at line 13  INFO - Logging setup is done.
+09/30/2022 06:55:38 PM p40629 log.py at line 13  INFO - Logging setup is done.
+09/30/2022 06:55:54 PM p40645 log.py at line 13  INFO - Logging setup is done.
+09/30/2022 06:55:59 PM p40656 log.py at line 13  INFO - Logging setup is done.
+09/30/2022 06:56:15 PM p40673 log.py at line 13  INFO - Logging setup is done.
+09/30/2022 07:00:48 PM p41070 log.py at line 13  INFO - Logging setup is done.
+09/30/2022 07:00:48 PM p41070 log.py at line 13  INFO - Logging setup is done.
+09/30/2022 07:00:48 PM p41070 authentications.py at line 26  INFO - Loading env variables from env file
+09/30/2022 07:00:48 PM p41070 collector.py at line 104  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/30/2022 07:00:48 PM p41070 collector.py at line 134  INFO - Setting URL path done for search type: Recent_tweets
+09/30/2022 07:00:48 PM p41070 collector.py at line 108  INFO - Making request for Data_on_25th_Recent_tweets
+09/30/2022 07:00:49 PM p41070 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:00:49 PM p41070 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/30/2022 07:00:49 PM p41070 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/30/2022 07:00:50 PM p41070 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:00:50 PM p41070 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/30/2022 07:00:50 PM p41070 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/30/2022 07:00:51 PM p41070 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:00:51 PM p41070 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/30/2022 07:00:51 PM p41070 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/30/2022 07:00:51 PM p41070 collector.py at line 104  INFO - Preparing to get data for Data_on_24th_Recent_tweets parameters.
+09/30/2022 07:00:51 PM p41070 collector.py at line 134  INFO - Setting URL path done for search type: Recent_tweets
+09/30/2022 07:00:51 PM p41070 collector.py at line 108  INFO - Making request for Data_on_24th_Recent_tweets
+09/30/2022 07:00:52 PM p41070 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:00:52 PM p41070 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/30/2022 07:00:52 PM p41070 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/30/2022 07:00:53 PM p41070 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:00:53 PM p41070 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/30/2022 07:00:53 PM p41070 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/30/2022 07:00:54 PM p41070 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:00:54 PM p41070 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/30/2022 07:00:54 PM p41070 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/30/2022 07:00:54 PM p41070 collector.py at line 104  INFO - Preparing to get data for Data_on_25th_By_User_ID parameters.
+09/30/2022 07:00:54 PM p41070 collector.py at line 134  INFO - Setting URL path done for search type: By_User_ID
+09/30/2022 07:00:54 PM p41070 collector.py at line 108  INFO - Making request for Data_on_25th_By_User_ID
+09/30/2022 07:00:54 PM p41070 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:00:54 PM p41070 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_25th_By_User_ID.json
+09/30/2022 07:00:54 PM p41070 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_By_User_ID.json.
+09/30/2022 07:00:54 PM p41070 collector.py at line 104  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_400 parameters.
+09/30/2022 07:00:54 PM p41070 collector.py at line 134  INFO - Setting URL path done for search type: By_User_ID
+09/30/2022 07:00:54 PM p41070 collector.py at line 108  INFO - Making request for Data_on_20th_By_User_ID_error_400
+09/30/2022 07:00:55 PM p41070 collector.py at line 85  ERROR - Invalid Request,One or more parameters to your request was invalid.
+with https://api.twitter.com/2/users/dawdwf/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at
+09/30/2022 07:00:55 PM p41070 collector.py at line 90  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_400.json
+09/30/2022 07:00:55 PM p41070 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_400.json.
+09/30/2022 07:00:55 PM p41070 collector.py at line 104  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_404 parameters.
+09/30/2022 07:00:55 PM p41070 collector.py at line 134  INFO - Setting URL path done for search type: By_User_ID
+09/30/2022 07:00:55 PM p41070 collector.py at line 108  INFO - Making request for Data_on_20th_By_User_ID_error_404
+09/30/2022 07:00:56 PM p41070 collector.py at line 85  ERROR - Resource Not Found
+with https://api.twitter.com/2/userss/123354/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at
+09/30/2022 07:00:56 PM p41070 collector.py at line 90  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_404.json
+09/30/2022 07:00:56 PM p41070 file_writer.py at line 82  ERROR - Json Decoding failed for response <Response [404]>
+09/30/2022 07:00:56 PM p41070 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_404.json.
+09/30/2022 07:01:02 PM p41090 log.py at line 13  INFO - Logging setup is done.
+09/30/2022 07:01:02 PM p41090 log.py at line 13  INFO - Logging setup is done.
+09/30/2022 07:01:02 PM p41090 authentications.py at line 26  INFO - Loading env variables from env file
+09/30/2022 07:01:02 PM p41090 collector.py at line 104  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+09/30/2022 07:01:02 PM p41090 collector.py at line 134  INFO - Setting URL path done for search type: Recent_tweets
+09/30/2022 07:01:02 PM p41090 collector.py at line 108  INFO - Making request for Data_on_25th_Recent_tweets
+09/30/2022 07:01:03 PM p41090 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:01:03 PM p41090 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/30/2022 07:01:03 PM p41090 file_writer.py at line 68  INFO - Created Directory:  ./Response_data
+09/30/2022 07:01:03 PM p41090 file_writer.py at line 108  INFO - Created Directory: ./Response_data
+09/30/2022 07:01:03 PM p41090 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/30/2022 07:01:04 PM p41090 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:01:04 PM p41090 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/30/2022 07:01:04 PM p41090 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/30/2022 07:01:05 PM p41090 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:01:05 PM p41090 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_25th_Recent_tweets.json
+09/30/2022 07:01:05 PM p41090 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_Recent_tweets.json.
+09/30/2022 07:01:05 PM p41090 collector.py at line 104  INFO - Preparing to get data for Data_on_24th_Recent_tweets parameters.
+09/30/2022 07:01:05 PM p41090 collector.py at line 134  INFO - Setting URL path done for search type: Recent_tweets
+09/30/2022 07:01:05 PM p41090 collector.py at line 108  INFO - Making request for Data_on_24th_Recent_tweets
+09/30/2022 07:01:06 PM p41090 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:01:06 PM p41090 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/30/2022 07:01:06 PM p41090 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/30/2022 07:01:07 PM p41090 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:01:07 PM p41090 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/30/2022 07:01:07 PM p41090 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/30/2022 07:01:08 PM p41090 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:01:08 PM p41090 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_24th_Recent_tweets.json
+09/30/2022 07:01:08 PM p41090 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_24th_Recent_tweets.json.
+09/30/2022 07:01:08 PM p41090 collector.py at line 104  INFO - Preparing to get data for Data_on_25th_By_User_ID parameters.
+09/30/2022 07:01:08 PM p41090 collector.py at line 134  INFO - Setting URL path done for search type: By_User_ID
+09/30/2022 07:01:08 PM p41090 collector.py at line 108  INFO - Making request for Data_on_25th_By_User_ID
+09/30/2022 07:01:09 PM p41090 collector.py at line 77  INFO - Response is success with status code 200.
+09/30/2022 07:01:09 PM p41090 collector.py at line 79  INFO - Storing successful data in./Response_data/success_Data_on_25th_By_User_ID.json
+09/30/2022 07:01:09 PM p41090 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_By_User_ID.json.
+09/30/2022 07:01:09 PM p41090 collector.py at line 104  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_400 parameters.
+09/30/2022 07:01:09 PM p41090 collector.py at line 134  INFO - Setting URL path done for search type: By_User_ID
+09/30/2022 07:01:09 PM p41090 collector.py at line 108  INFO - Making request for Data_on_20th_By_User_ID_error_400
+09/30/2022 07:01:10 PM p41090 collector.py at line 85  ERROR - Invalid Request,One or more parameters to your request was invalid.
+with https://api.twitter.com/2/users/dawdwf/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at
+09/30/2022 07:01:10 PM p41090 collector.py at line 90  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_400.json
+09/30/2022 07:01:10 PM p41090 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_400.json.
+09/30/2022 07:01:10 PM p41090 collector.py at line 104  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_404 parameters.
+09/30/2022 07:01:10 PM p41090 collector.py at line 134  INFO - Setting URL path done for search type: By_User_ID
+09/30/2022 07:01:10 PM p41090 collector.py at line 108  INFO - Making request for Data_on_20th_By_User_ID_error_404
+09/30/2022 07:01:11 PM p41090 collector.py at line 85  ERROR - Resource Not Found
+with https://api.twitter.com/2/userss/123354/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at
+09/30/2022 07:01:11 PM p41090 collector.py at line 90  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_404.json
+09/30/2022 07:01:11 PM p41090 file_writer.py at line 82  ERROR - Json Decoding failed for response <Response [404]>
+09/30/2022 07:01:11 PM p41090 file_writer.py at line 143  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_404.json.
+10/03/2022 07:41:53 PM p51793 log.py at line 15  INFO - Logging setup is done.
+10/03/2022 07:41:53 PM p51793 authentications.py at line 25  INFO - Loading env variables from env file
+10/03/2022 07:41:53 PM p51793 collector.py at line 99  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+10/03/2022 07:41:53 PM p51793 collector.py at line 130  INFO - Setting URL path done for search type: Recent_tweets
+10/03/2022 07:41:53 PM p51793 collector.py at line 103  INFO - Making request for Data_on_25th_Recent_tweets
+10/03/2022 07:41:54 PM p51793 collector.py at line 81  ERROR - Invalid Request,One or more parameters to your request was invalid.
+with https://api.twitter.com/2/tweets/search/recent?query=Manoj&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&max_results=10
+10/03/2022 07:41:54 PM p51793 collector.py at line 86  INFO - Storing Failure data in./Response_data/failure_Data_on_25th_Recent_tweets.json
+10/03/2022 07:41:54 PM p51793 file_writer.py at line 139  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_25th_Recent_tweets.json.
+10/03/2022 07:41:54 PM p51793 collector.py at line 99  INFO - Preparing to get data for Data_on_24th_Recent_tweets parameters.
+10/03/2022 07:41:54 PM p51793 collector.py at line 130  INFO - Setting URL path done for search type: Recent_tweets
+10/03/2022 07:41:54 PM p51793 collector.py at line 103  INFO - Making request for Data_on_24th_Recent_tweets
+10/03/2022 07:41:55 PM p51793 collector.py at line 81  ERROR - Invalid Request,One or more parameters to your request was invalid.
+with https://api.twitter.com/2/tweets/search/recent?query=India&start_time=2022-09-24T00:00:00Z&end_time=2022-09-24T01:00:00Z&max_results=10
+10/03/2022 07:41:55 PM p51793 collector.py at line 86  INFO - Storing Failure data in./Response_data/failure_Data_on_24th_Recent_tweets.json
+10/03/2022 07:41:55 PM p51793 file_writer.py at line 139  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_24th_Recent_tweets.json.
+10/03/2022 07:41:55 PM p51793 collector.py at line 99  INFO - Preparing to get data for Data_on_25th_By_User_ID parameters.
+10/03/2022 07:41:55 PM p51793 collector.py at line 130  INFO - Setting URL path done for search type: By_User_ID
+10/03/2022 07:41:55 PM p51793 collector.py at line 103  INFO - Making request for Data_on_25th_By_User_ID
+10/03/2022 07:41:56 PM p51793 collector.py at line 73  INFO - Response is success with status code 200.
+10/03/2022 07:41:56 PM p51793 collector.py at line 75  INFO - Storing successful data in./Response_data/success_Data_on_25th_By_User_ID.json
+10/03/2022 07:41:56 PM p51793 file_writer.py at line 139  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_By_User_ID.json.
+10/03/2022 07:41:56 PM p51793 collector.py at line 99  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_400 parameters.
+10/03/2022 07:41:56 PM p51793 collector.py at line 130  INFO - Setting URL path done for search type: By_User_ID
+10/03/2022 07:41:56 PM p51793 collector.py at line 103  INFO - Making request for Data_on_20th_By_User_ID_error_400
+10/03/2022 07:41:56 PM p51793 collector.py at line 81  ERROR - Invalid Request,One or more parameters to your request was invalid.
+with https://api.twitter.com/2/users/dawdwf/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at
+10/03/2022 07:41:56 PM p51793 collector.py at line 86  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_400.json
+10/03/2022 07:41:56 PM p51793 file_writer.py at line 139  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_400.json.
+10/03/2022 07:41:56 PM p51793 collector.py at line 99  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_404 parameters.
+10/03/2022 07:41:56 PM p51793 collector.py at line 130  INFO - Setting URL path done for search type: By_User_ID
+10/03/2022 07:41:56 PM p51793 collector.py at line 103  INFO - Making request for Data_on_20th_By_User_ID_error_404
+10/03/2022 07:41:57 PM p51793 collector.py at line 81  ERROR - Resource Not Found
+with https://api.twitter.com/2/userss/123354/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at
+10/03/2022 07:41:57 PM p51793 collector.py at line 86  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_404.json
+10/03/2022 07:41:57 PM p51793 file_writer.py at line 83  ERROR - Json Decoding failed for response <Response [404]>
+10/03/2022 07:41:57 PM p51793 file_writer.py at line 139  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_404.json.
