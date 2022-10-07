@@ -1491,3 +1491,40 @@ with https://api.twitter.com/2/userss/123354/tweets?start_time=2022-09-25T00:00:
 10/03/2022 07:41:57 PM p51793 collector.py at line 86  INFO - Storing Failure data in./Response_data/failure_Data_on_20th_By_User_ID_error_404.json
 10/03/2022 07:41:57 PM p51793 file_writer.py at line 83  ERROR - Json Decoding failed for response <Response [404]>
 10/03/2022 07:41:57 PM p51793 file_writer.py at line 139  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_404.json.
+10/07/2022 11:12:08 AM p10065 log.py at line 15  INFO - Logging setup is done.
+10/07/2022 11:12:08 AM p10065 authentications.py at line 21  INFO - Loading env variables from env file
+10/07/2022 11:12:08 AM p10065 collector.py at line 96  INFO - Preparing to get data for Data_on_25th_Recent_tweets parameters.
+10/07/2022 11:12:08 AM p10065 collector.py at line 128  INFO - Setting URL path done for search type: Recent_tweets
+10/07/2022 11:12:08 AM p10065 collector.py at line 100  INFO - Making request for Data_on_25th_Recent_tweets
+10/07/2022 11:12:10 AM p10065 collector.py at line 78  ERROR - Invalid Request,One or more parameters to your request was invalid.
+with https://api.twitter.com/2/tweets/search/recent?query=Manoj&start_time=2022-09-25T00:00:00Z&end_time=2022-09-25T01:00:00Z&max_results=10
+10/07/2022 11:12:10 AM p10065 collector.py at line 83  INFO - Storing Failure data in ./Response_data/failure_Data_on_25th_Recent_tweets.json
+10/07/2022 11:12:10 AM p10065 file_writer.py at line 138  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_25th_Recent_tweets.json
+10/07/2022 11:12:10 AM p10065 collector.py at line 96  INFO - Preparing to get data for Data_on_24th_Recent_tweets parameters.
+10/07/2022 11:12:10 AM p10065 collector.py at line 128  INFO - Setting URL path done for search type: Recent_tweets
+10/07/2022 11:12:10 AM p10065 collector.py at line 100  INFO - Making request for Data_on_24th_Recent_tweets
+10/07/2022 11:12:11 AM p10065 collector.py at line 78  ERROR - Invalid Request,One or more parameters to your request was invalid.
+with https://api.twitter.com/2/tweets/search/recent?query=India&start_time=2022-09-24T00:00:00Z&end_time=2022-09-24T01:00:00Z&max_results=10
+10/07/2022 11:12:11 AM p10065 collector.py at line 83  INFO - Storing Failure data in ./Response_data/failure_Data_on_24th_Recent_tweets.json
+10/07/2022 11:12:11 AM p10065 file_writer.py at line 138  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_24th_Recent_tweets.json
+10/07/2022 11:12:11 AM p10065 collector.py at line 96  INFO - Preparing to get data for Data_on_25th_By_User_ID parameters.
+10/07/2022 11:12:11 AM p10065 collector.py at line 128  INFO - Setting URL path done for search type: By_User_ID
+10/07/2022 11:12:11 AM p10065 collector.py at line 100  INFO - Making request for Data_on_25th_By_User_ID
+10/07/2022 11:12:11 AM p10065 collector.py at line 70  INFO - Response is success with status code 200.
+10/07/2022 11:12:11 AM p10065 collector.py at line 72  INFO - Storing successful data in %s
+10/07/2022 11:12:11 AM p10065 file_writer.py at line 138  INFO - Writing file completed, in file path: ./Response_data/success_Data_on_25th_By_User_ID.json
+10/07/2022 11:12:11 AM p10065 collector.py at line 96  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_400 parameters.
+10/07/2022 11:12:11 AM p10065 collector.py at line 128  INFO - Setting URL path done for search type: By_User_ID
+10/07/2022 11:12:11 AM p10065 collector.py at line 100  INFO - Making request for Data_on_20th_By_User_ID_error_400
+10/07/2022 11:12:12 AM p10065 collector.py at line 78  ERROR - Invalid Request,One or more parameters to your request was invalid.
+with https://api.twitter.com/2/users/dawdwf/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at
+10/07/2022 11:12:12 AM p10065 collector.py at line 83  INFO - Storing Failure data in ./Response_data/failure_Data_on_20th_By_User_ID_error_400.json
+10/07/2022 11:12:12 AM p10065 file_writer.py at line 138  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_400.json
+10/07/2022 11:12:12 AM p10065 collector.py at line 96  INFO - Preparing to get data for Data_on_20th_By_User_ID_error_404 parameters.
+10/07/2022 11:12:12 AM p10065 collector.py at line 128  INFO - Setting URL path done for search type: By_User_ID
+10/07/2022 11:12:12 AM p10065 collector.py at line 100  INFO - Making request for Data_on_20th_By_User_ID_error_404
+10/07/2022 11:12:13 AM p10065 collector.py at line 78  ERROR - Resource Not Found
+with https://api.twitter.com/2/userss/123354/tweets?start_time=2022-09-25T00:00:00Z&end_time=2022-09-26T00:00:00Z&user.fields=created_at
+10/07/2022 11:12:13 AM p10065 collector.py at line 83  INFO - Storing Failure data in ./Response_data/failure_Data_on_20th_By_User_ID_error_404.json
+10/07/2022 11:12:13 AM p10065 file_writer.py at line 87  ERROR - Json Decoding failed, for response <Response [404]>
+10/07/2022 11:12:13 AM p10065 file_writer.py at line 138  INFO - Writing file completed, in file path: ./Response_data/failure_Data_on_20th_By_User_ID_error_404.json
