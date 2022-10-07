@@ -1,6 +1,0 @@
-.env
-__pycache__
-.cspell
-.pytest_cache
-.vscode
-.idea
