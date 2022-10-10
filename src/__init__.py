@@ -1,1 +1,1 @@
-"""src is python Directory which holds complete functionality of twitter Connector application ."""
+"""It holds the complete python implementation of twitter connector."""
