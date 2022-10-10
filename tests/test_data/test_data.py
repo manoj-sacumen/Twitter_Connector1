@@ -90,13 +90,6 @@ test_data_collector = {
                   'test_api_token': 'test_api_token'},
         'output': {'auth_token': 'test_token test_api_token'}
     },
-    'test_send_request': {
-        'input': {'method': 'GET',
-                  'url': f'{API_URL}/2/tweets/search/recent?query=India&max_results=10',
-                  'query': 'India',
-                  'max_results': 10},
-        'output': {}
-    },
     'test_handles_response': {
         'input': {'text_data': '{"data":{"text":"abcdefg"},"meta":{"next_token":"123456789"}}',
                   },
@@ -154,7 +147,48 @@ test_data_collector = {
                    'next_token': '',
                    'status_code': 200,
                    'file_path': './Response_data/success_Tweets_by_user_id_test.json'}
+    },
+    'test_create_query_params_today_tweets': {
+        'input': {"params": {"query": "India", "max_results": 7},
+                  "name": 'today_tweets'},
+        'output': {'search_type': 'Recent_tweets', 'method': 'GET', 'path': '/2/tweets/search/recent',
+                   'query_params': {'query': 'India', 'start_time': '2022-10-10T00:00:00Z',
+                                    'end_time': '2022-10-11T00:00:00Z', 'max_results': 7}}
+    },
+    'test_create_query_params_tweets_by_datetime': {
+        'input': {'name': '9th_Oct_2022_tweets',
+                  'params': {"query": "India", "start_time": "2022-10-09T00:00:00Z",
+                             "end_time": "2022-10-09T02:00:00Z",
+                             "max_results": 100}
+                  },
+        'output': {'method': 'GET',
+                   'path': '/2/tweets/search/recent',
+                   'query_params': {'end_time': '2022-10-09T02:00:00Z',
+                                    'max_results': 100,
+                                    'query': 'India',
+                                    'start_time': '2022-10-09T00:00:00Z'},
+                   'search_type': 'Recent_tweets'}
+    },
+    'test_create_query_params_user_tweets': {
+        'input': {
+            'params': {"user_id": 54829997, "start_time": "2022-10-07T00:00:00Z", "end_time": "2022-10-11T00:00:00Z",
+                       "user.fields": "created_at"},
+            'name': 'user_54829997_tweets'},
+        'output': {'method': 'GET', 'search_type': 'By_User_ID', 'user_id': 54829997, 'path': '/2/users',
+                   'query_params': {'start_time': '2022-10-07T00:00:00Z', 'end_time': '2022-10-11T00:00:00Z',
+                                    'max_results': 10, 'user.fields': 'created_at'}}
     }
 
 }
 test_data_collector = Box(test_data_collector)
+
+test_data_request_handler = {
+    'test_send_request': {
+        'input': {'method': 'GET',
+                  'url': f'{API_URL}/2/tweets/search/recent?query=India&max_results=10',
+                  'query': 'India',
+                  'max_results': 10},
+        'output': {}}
+}
+
+test_data_request_handler = Box(test_data_request_handler)

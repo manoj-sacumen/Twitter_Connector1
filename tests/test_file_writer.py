@@ -133,16 +133,16 @@ def test_load_response_text_in_json3():
 
 @pytest.mark.parametrize("content_type,expected_content",
                          [
-                             pytest.param('text', '{}', id='text'),
-                             pytest.param('json', {}, id='json'),
-                             pytest.param('zip', b'{}', id='bytes'),
-                             pytest.param('xml', '{}', id='xml')
+                             pytest.param('text', {}, id='text'),
+                             pytest.param('json', {"name": "Twitter"}, id='json'),
+                             pytest.param('zip', {}, id='bytes'),
+                             pytest.param('xml', {}, id='xml')
                          ],
                          )
 def test_get_data_to_write(content_type, expected_content):
     """Test functionality of selection of data from response object based on parameters."""
     file_writer = FileWriter()
-    file_writer.response = create_response_obj(text_data='{}')
+    file_writer.response = create_response_obj(text_data='{"name":"Twitter"}')
     file_writer.content_type = content_type
     assert expected_content == file_writer.get_data_to_write()
 

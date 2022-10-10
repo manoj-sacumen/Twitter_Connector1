@@ -3,7 +3,6 @@ import json
 import os
 
 import pytest
-from requests import Response  # type: ignore
 
 from src.api_config import STORE_DIR
 from src.collector import Collector
@@ -40,22 +39,6 @@ def test_get_auth_token():
     # tear up
     del os.environ['TOKEN_TYPE']
     del os.environ['API_TOKEN']
-
-
-def test_send_request():
-    """Test functionality which sends request to given url."""
-    input_data = get_test_input_data()
-    col = Collector()
-    col.method = input_data.method
-    col.url = input_data.url
-    col.send_request()
-    assert isinstance(col.response, Response)
-    if col.response.status_code == 200:
-        assert input_data.query in col.response.text
-        json_data = json.loads(col.response.text)
-        assert json_data['meta']['result_count'] <= input_data.max_results
-    else:
-        print('Request Failed in test_send_request,', col.response)
 
 
 @pytest.mark.parametrize('status_code,fn_prefix',
@@ -133,8 +116,8 @@ def test_get_tweets():
     input_data = get_test_input_data()
     output_data = get_test_output_data()
     col = Collector()
-    col.get_tweets(input_data.params)
-    print()
+    col.params = input_data.params
+    col.get_tweets()
     assert col.response.status_code == output_data.status_code
     file_path = output_data.file_path
     if os.path.exists(file_path):
@@ -145,3 +128,43 @@ def test_get_tweets():
     else:
         assert False
     assert col.next_token == output_data.next_token
+
+
+def test_create_query_params_today_tweets():
+    """Test for updating user given input to template parameter set."""
+    input_data = get_test_input_data()
+    expected_data = get_test_output_data()
+    import datetime
+    now = datetime.datetime.now
+    today = now().strftime("%Y-%m-%dT00:00:00Z")
+    tomorrow = (now() + datetime.timedelta(1)).strftime("%Y-%m-%dT00:00:00Z")
+    col = Collector()
+    col.create_query_params(input_data.params, name=input_data.name)
+    key = 'Data_on_' + str(input_data.name)
+    value = col.params[key]
+    query_params = value['query_params']
+    assert query_params['start_time'] == today
+    assert query_params['end_time'] == tomorrow
+    assert query_params['query'] == expected_data.query_params.query
+    assert query_params['max_results'] == expected_data.query_params.max_results
+
+
+def test_create_query_params_tweets_by_datetime():
+    """Test for updating user given input to template parameter set."""
+    input_data = get_test_input_data()
+    expected_data = get_test_output_data()
+    col = Collector()
+    col.create_query_params(input_data.params, name=input_data.name)
+    key = 'Data_on_' + str(input_data.name)
+    assert col.params[key] == expected_data
+
+
+def test_create_query_params_user_tweets():
+    """Test for updating user given input to template parameter set."""
+    input_data = get_test_input_data()
+    expected_data = get_test_output_data()
+    col = Collector()
+    col.create_query_params(input_data.params, name=input_data.name)
+    key = 'Data_on_' + str(input_data.name)
+    assert col.params[key] == expected_data
+    print()

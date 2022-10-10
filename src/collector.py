@@ -1,12 +1,14 @@
 """Collector module is the main module which will get data from Twitter API."""
+import datetime
 import json
 
 import requests  # type: ignore
 
-from src.api_config import API_URL, PARAMS, STORE_DIR
+from src.api_config import API_URL, QUERY_TEMPLATE, STORE_DIR
 from src.authentications import Authentications
 from src.file_writer import FileWriter
 from src.log import log
+from src.request_handler import send_request
 from src.std_log import (ERROR_CODE_LIST, MAKING_REQUEST,
                          PREPARING_TO_GET_DATA, SET_URL_PATH,
                          STORE_FAILURE_DATA, STORE_SUCCESS_DATA,
@@ -32,6 +34,7 @@ class Collector:
         self.url_path: str = ''
         self.data_fetch_pending: bool = True
         self.next_token: str = ''
+        self.params: dict = {}
 
     def generate_querystring(self, param: dict) -> None:
         """Generate query string.
@@ -57,11 +60,6 @@ class Collector:
         api_token = self.auth.get_api_token()
         return f'{token_type} {api_token}'
 
-    def send_request(self) -> None:
-        """Make a request for the defined parameters."""
-        self.response = requests.request(
-            self.method, self.url, headers=self.headers, data=self.payload)
-
     def handles_response(self) -> None:
         """Handle request responses."""
         """validate for success or failure and takes respective steps."""
@@ -78,7 +76,7 @@ class Collector:
                 log.error(ERROR_CODE_LIST[status_code] + f'\nwith {self.url}')
                 file_path = f'{STORE_DIR}/failure_{self.current_key}.json'
             else:
-                log.error(UN_DEFINED_CODE, (str(status_code), str(self.response.text)))
+                log.error(UN_DEFINED_CODE, str(status_code), str(self.response.text))
                 file_path = f'{STORE_DIR}/undefined_{self.current_key}.json'
             log.info(STORE_FAILURE_DATA, file_path)
             self.file_writer.write_response_to_file(
@@ -86,13 +84,13 @@ class Collector:
             self.data_fetch_pending = False
             self.next_token = ''
 
-    def get_tweets(self, params: dict) -> None:
+    def get_tweets(self) -> None:
         """Get Tweets acts as main function which will carry out steps for each parameter set as defined in config.
 
         Args:
             params (dict): holds request parameters details
         """
-        for key, value in params.items():
+        for key, value in self.params.items():
             log.info(PREPARING_TO_GET_DATA, str(key))
             self.current_key = key
             self.method = value['method']
@@ -107,7 +105,7 @@ class Collector:
                     value['query_params'][token_key] = self.next_token
                 self.generate_querystring(param=value['query_params'])
                 self.create_url()
-                self.send_request()
+                self.response = send_request(url=self.url, method=self.method, headers=self.headers, data=self.payload)
                 self.handles_response()
             self.data_fetch_pending = True
             self.next_token = ''
@@ -136,8 +134,48 @@ class Collector:
             self.data_fetch_pending = False
             self.next_token = ''
 
+    def create_query_params(self, params, name):
+        """Create new parameters dict by filling user input in predefined template."""
+        temp_param, query_params, name_of_query = {}, {}, 'Data_on_'
+        now = datetime.datetime.now
+        today = now().strftime("%Y-%m-%dT00:00:00Z")
+        tomorrow = (now() + datetime.timedelta(1)).strftime("%Y-%m-%dT00:00:00Z")
+        if "user_id" in params:
+            temp_param = QUERY_TEMPLATE['tweets_by_user_id']
+            query_params = temp_param['query_params']
+            temp_param["user_id"] = params.get("user_id")
+        else:
+            temp_param = QUERY_TEMPLATE['recent_tweets_query']
+            query_params = temp_param['query_params']
+            query_params["query"] = params.get("query")
+
+        query_params["start_time"] = params.get("start_time", today)
+        query_params["end_time"] = params.get("end_time", tomorrow)
+        query_params["max_results"] = params.get("max_results", 10)
+        name_of_query += name
+        self.params.update({name_of_query: temp_param})
+
 
 if __name__ == '__main__':  # pragma: no cover
-    # Get tweets by recent search
+    # Get tweets by recent search and user id
+    """
+    Note on parameters:
+    1. start_time should not be older than 7 days.
+    2. end_time should not be older than start_time.
+    3. time format should be in 'YYYY-MM-DDTHH:MM:SSZ'
+    4. max_results should be between 5 and 100.
+    5. user.fields should be in coma separated format.
+    """
+    today_tweets = {"query": "India", "max_results": 7}
+    tweets_by_datetime = {"query": "India",
+                          "start_time": "2022-10-09T00:00:00Z",
+                          "end_time": "2022-10-09T02:00:00Z",
+                          "max_results": 100}
+
+    user_tweets = {"user_id": 54829997, "start_time": "2022-10-07T00:00:00Z", "end_time": "2022-10-11T00:00:00Z",
+                   "user.fields": "created_at"}
     col = Collector()
-    col.get_tweets(PARAMS)
+    col.create_query_params(today_tweets, name='today_tweets')
+    col.create_query_params(tweets_by_datetime, name='9th_Oct_2022_tweets')
+    col.create_query_params(user_tweets, name='user_54829997_tweets')
+    col.get_tweets()

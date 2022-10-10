@@ -6,10 +6,12 @@ import requests  # type: ignore
 import requests_mock
 
 from tests.test_data.test_data import (test_data_collector,
-                                       test_data_file_writer)
+                                       test_data_file_writer,
+                                       test_data_request_handler)
 
 t_data = {'test_collector': test_data_collector,
-          'test_file_writer': test_data_file_writer}
+          'test_file_writer': test_data_file_writer,
+          'test_request_handler': test_data_request_handler}
 
 
 def get_test_input_data(func_name=''):
