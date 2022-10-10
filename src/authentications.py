@@ -29,7 +29,7 @@ class Authentications:
             str: API token key
         """
         log.debug(GET_API_TOKEN)
-        return str(os.getenv('API_TOKEN'))
+        return str(os.getenv(key='API_TOKEN', default=''))
 
     @staticmethod
     def get_api_key() -> str:
@@ -39,7 +39,7 @@ class Authentications:
             str: API Key
         """
         log.debug(GET_API_KEY)
-        return str(os.getenv('API_KEY'))
+        return str(os.getenv(key='API_KEY', default=''))
 
     @staticmethod
     def get_api_secret_key() -> str:
@@ -49,7 +49,7 @@ class Authentications:
             _type_: API secret key
         """
         log.debug(GET_API_SECRET_KEY)
-        return str(os.getenv('API_SECRET_KEY'))
+        return str(os.getenv(key='API_SECRET_KEY', default=''))
 
     @staticmethod
     def get_token_type() -> str:
@@ -58,7 +58,7 @@ class Authentications:
         Returns:
             str: Token Type
         """
-        return str(os.getenv('TOKEN_TYPE'))
+        return str(os.getenv(key='TOKEN_TYPE', default=''))
 
 # if __name__ == '__main__':
 #     auth = Authentications()
