@@ -2,7 +2,7 @@
 import json
 import os
 
-import requests  # type: ignore
+from sac_requests.context.request import Response
 
 from src.log import log
 from src.std_log import (BYTES_CONTENT, CREATED_DIR, FILE_EXISTS_ERROR,
@@ -21,7 +21,7 @@ class FileWriter:
         self.data: dict = {}
         self.content_type: str = ''
         self.file_path: str = ''
-        self.response: requests.Response = None
+        self.response: Response = None
 
     def sett(self, filepath, content_type, response) -> None:
         """Set parameter variables to instance variables.
@@ -103,7 +103,7 @@ class FileWriter:
         file_dir = self.get_parent_path(self.file_path)
         if not self.path_exists(file_dir):
             self.create_dirs(file_dir)
-            log.info(CREATED_DIR, str(file_dir))
+            log.info(CREATED_DIR, self.file_path)
 
     def select_mode(self) -> str:
         """Select mode of writing file based on file existence and type of content need to be written.

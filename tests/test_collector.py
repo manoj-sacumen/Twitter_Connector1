@@ -18,14 +18,14 @@ def test_generate_querystring():
     assert col.querystring == get_test_output_data()
 
 
-def test_create_url():
+def test_get_end_point():
     """Test to check creation of url from given parts of url."""
     input_data = get_test_input_data()
     col = Collector()
     col.url_path = input_data.url_path
     col.querystring = input_data.querystring
-    col.create_url()
-    assert col.url == get_test_output_data().url
+    col.get_end_point()
+    assert col.end_point == get_test_output_data().end_point
 
 
 def test_get_auth_token():
@@ -111,10 +111,14 @@ def test_check_for_next_page_data_without_next_token():
     assert col.next_token == output_data.next_token
 
 
-def test_get_tweets():
+@pytest.mark.parametrize("scenario", [('test_get_tweets_success'),
+                                      ('test_get_tweets_failure')
+                                      ]
+                         )
+def test_get_tweets(scenario):
     """Test get tweets functionality which acts as main actuator."""
-    input_data = get_test_input_data()
-    output_data = get_test_output_data()
+    input_data = get_test_input_data(func_name=scenario)
+    output_data = get_test_output_data(func_name=scenario)
     col = Collector()
     col.params = input_data.params
     col.get_tweets()
@@ -125,6 +129,7 @@ def test_get_tweets():
         for ids in output_data.expected_msgs_id:
             if ids not in content:
                 assert False
+        os.remove(file_path)
     else:
         assert False
     assert col.next_token == output_data.next_token

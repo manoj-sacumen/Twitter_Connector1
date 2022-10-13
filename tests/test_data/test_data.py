@@ -3,9 +3,8 @@ import os
 import sys
 
 from box import Box
-from requests import Response  # type: ignore
+from sac_requests.context.request import Response
 
-from src.api_config import API_URL
 from src.std_log import BYTES_CONTENT, TEXT_CONTENT
 
 sys.path.append("./src")
@@ -79,11 +78,11 @@ test_data_collector = {
                   'max_results': 10},
         'output': 'query=India&start_time=2022-09-24T00:00:00Z&end_time=2022-09-24T01:00:00Z&max_results=10'
     },
-    'test_create_url': {
-        'input': {'url_path': '/2/tweets/search/recent',
+    'test_get_end_point': {
+        'input': {'url_path': '2/tweets/search/recent',
                   'querystring': 'query=india&start_time=2022-09-29T00:00:00Z&end_time=2022-09-29T01:00:00Z'},
         'output': {
-            'url': f'{API_URL}/2/tweets/search/recent?query=india&start_time=2022-09-29T00:00:00Z&end_time=2022-09-29T01:00:00Z'}
+            'end_point': '2/tweets/search/recent?query=india&start_time=2022-09-29T00:00:00Z&end_time=2022-09-29T01:00:00Z'}
     },
     'test_get_auth_token': {
         'input': {'test_token': 'test_token',
@@ -94,7 +93,7 @@ test_data_collector = {
         'input': {'text_data': '{"data":{"text":"abcdefg"},"meta":{"next_token":"123456789"}}',
                   },
         'output': {200: {'text_data': {"text": "abcdefg"}, 'next_token': '123456789'},
-                   400: {'text_data': {"text": "abcdefg"}, 'next_token': ''},
+                   400: {'text_data': {}, 'next_token': ''},
                    100: {'text_data': {"text": "abcdefg"}, 'next_token': ''}
                    }
 
@@ -131,7 +130,7 @@ test_data_collector = {
                   },
         'output': {'next_token': ""}
     },
-    'test_get_tweets': {
+    'test_get_tweets_success': {
         'input': {'params': {'Tweets_by_user_id_test': {'method': 'GET',
                                                         'search_type': 'By_User_ID',
                                                         'user_id': 1572527925186134016,
@@ -147,6 +146,22 @@ test_data_collector = {
                    'next_token': '',
                    'status_code': 200,
                    'file_path': './Response_data/success_Tweets_by_user_id_test.json'}
+    },
+    'test_get_tweets_failure': {
+        'input': {'params': {'Tweets_by_user_id_test': {'method': 'GET',
+                                                        'search_type': 'By_User_ID',
+                                                        'user_id': 1572527925186,
+                                                        'path': '/2/userss',
+                                                        'query_params': {'max_results': 5,
+                                                                         'user.fields': 'created_at,id,name,username',
+                                                                         }
+                                                        }
+                             }
+                  },
+        'output': {'expected_msgs_id': [],
+                   'next_token': '',
+                   'status_code': 404,
+                   'file_path': './Response_data/failure_Tweets_by_user_id_test.json'}
     },
     'test_create_query_params_today_tweets': {
         'input': {"params": {"query": "India", "max_results": 7},
@@ -183,11 +198,11 @@ test_data_collector = {
 test_data_collector = Box(test_data_collector)
 
 test_data_request_handler = {
-    'test_send_request': {
-        'input': {'method': 'GET',
-                  'url': f'{API_URL}/2/tweets/search/recent?query=India&max_results=10',
-                  'query': 'India',
-                  'max_results': 10},
+    'test_send_get_request': {
+        'input': {
+            'end_point': '2/tweets/search/recent?query=India&max_results=10',
+            'query': 'India',
+            'max_results': 10},
         'output': {}}
 }
 

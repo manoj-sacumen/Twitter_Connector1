@@ -2,14 +2,14 @@
 import datetime
 import json
 
-import requests  # type: ignore
+from sac_requests.context.request import Response
 
 from src.api_config import API_URL, QUERY_TEMPLATE, STORE_DIR
 from src.authentications import Authentications
 from src.file_writer import FileWriter
 from src.log import log
-from src.request_handler import send_request
-from src.std_log import (ERROR_CODE_LIST, MAKING_REQUEST,
+from src.request_handler import RequestHandler
+from src.std_log import (BEARER_TOKEN, ERROR_CODE_LIST, MAKING_REQUEST,
                          PREPARING_TO_GET_DATA, SET_URL_PATH,
                          STORE_FAILURE_DATA, STORE_SUCCESS_DATA,
                          SUCCESS_CODE_LIST, UN_DEFINED_CODE)
@@ -22,19 +22,20 @@ class Collector:
         """Collector will be sending requests to External resources."""
         """Request will be sent with the help of auth and config modules and received data will be stored."""
         self.auth: Authentications = Authentications()
+        self.token_type = self.auth.get_token_type()
         self.auth_token: str = self.get_auth_token()
         self.file_writer: FileWriter = FileWriter()
         self.headers: dict = {'Authorization': self.auth_token}
-        self.payload: dict = {}
         self.querystring: str = ''
-        self.url: str = ''
-        self.response: requests.Response = requests.Response()
+        self.end_point: str = ''
+        self.response: Response = Response()
         self.current_key: str = ''
         self.method: str = ''
         self.url_path: str = ''
         self.data_fetch_pending: bool = True
         self.next_token: str = ''
         self.params: dict = {}
+        self.request_handel = RequestHandler(headers=self.headers, host=API_URL, auth_type=BEARER_TOKEN)
 
     def generate_querystring(self, param: dict) -> None:
         """Generate query string.
@@ -46,9 +47,9 @@ class Collector:
         self.querystring = ''.join(
             f'{key}={val}&' for key, val in param.items()).rstrip('&')
 
-    def create_url(self) -> None:
-        """Create url by concatenating the parts of URL."""
-        self.url = f"{API_URL}{self.url_path}?{self.querystring}"
+    def get_end_point(self) -> None:
+        """Get end point by combining url path and query string."""
+        self.end_point = f"{self.url_path}?{self.querystring}"
 
     def get_auth_token(self) -> str:
         """Get Authentication token.
@@ -56,9 +57,8 @@ class Collector:
         Returns:
             str: Authentication token
         """
-        token_type = self.auth.get_token_type()
         api_token = self.auth.get_api_token()
-        return f'{token_type} {api_token}'
+        return f'{self.token_type} {api_token}'
 
     def handles_response(self) -> None:
         """Handle request responses."""
@@ -73,7 +73,7 @@ class Collector:
             self.check_for_next_page_data()
         else:
             if status_code in ERROR_CODE_LIST:
-                log.error(ERROR_CODE_LIST[status_code] + f'\nwith {self.url}')
+                log.error(ERROR_CODE_LIST[status_code] + f'\nwith {self.end_point}')
                 file_path = f'{STORE_DIR}/failure_{self.current_key}.json'
             else:
                 log.error(UN_DEFINED_CODE, str(status_code), str(self.response.text))
@@ -104,8 +104,8 @@ class Collector:
                     token_key = 'pagination_token' if value['search_type'] == 'By_User_ID' else 'next_token'
                     value['query_params'][token_key] = self.next_token
                 self.generate_querystring(param=value['query_params'])
-                self.create_url()
-                self.response = send_request(url=self.url, method=self.method, headers=self.headers, data=self.payload)
+                self.get_end_point()
+                self.response = self.request_handel.send_get_request(endpoint=self.end_point)
                 self.handles_response()
             self.data_fetch_pending = True
             self.next_token = ''
@@ -163,10 +163,10 @@ if __name__ == '__main__':  # pragma: no cover
     1. start_time should not be older than 7 days.
     2. end_time should not be older than start_time.
     3. time format should be in 'YYYY-MM-DDTHH:MM:SSZ'
-    4. max_results should be between 5 and 100.
+    4. max_results should be between 10 and 100.
     5. user.fields should be in coma separated format.
     """
-    today_tweets = {"query": "India", "max_results": 7}
+    today_tweets = {"query": "India", "max_results": 1}
     tweets_by_datetime = {"query": "India",
                           "start_time": "2022-10-09T00:00:00Z",
                           "end_time": "2022-10-09T02:00:00Z",
@@ -176,6 +176,6 @@ if __name__ == '__main__':  # pragma: no cover
                    "user.fields": "created_at"}
     col = Collector()
     col.create_query_params(today_tweets, name='today_tweets')
-    col.create_query_params(tweets_by_datetime, name='9th_Oct_2022_tweets')
-    col.create_query_params(user_tweets, name='user_54829997_tweets')
+    # col.create_query_params(tweets_by_datetime, name='9th_Oct_2022_tweets')
+    # col.create_query_params(user_tweets, name='user_54829997_tweets')
     col.get_tweets()

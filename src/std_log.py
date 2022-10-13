@@ -34,3 +34,4 @@ ERROR_CODE_LIST = {400: RESPONSE400,
 # Standard keywords
 TEXT_CONTENT = ['text', 'html', 'json', 'yaml']
 BYTES_CONTENT = ['jpg', 'png', 'zip', 'xls']
+BEARER_TOKEN = "BEARER_TOKEN"  # nosec

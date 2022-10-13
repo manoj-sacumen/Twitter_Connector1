@@ -1,6 +1,6 @@
 """api_config module acts as placeholder of input data required to make requests for Twitter API."""
 # API Url
-API_URL = 'https://api.twitter.com'
+API_URL = 'api.twitter.com'  # https://
 # Response data storing location
 STORE_DIR = './Response_data'
 
@@ -11,9 +11,6 @@ QUERY_TEMPLATE = {
         "path": "/2/tweets/search/recent",
         "query_params": {
             "query": "",
-            "start_time": "",
-            "end_time": "",
-            "max_results": 0
         }
     },
     "tweets_by_user_id": {
@@ -22,9 +19,6 @@ QUERY_TEMPLATE = {
         "user_id": 0,
         "path": "/2/users",
         "query_params": {
-            "start_time": "",
-            "end_time": "",
-            "max_results": "",
             "user.fields": "created_at"
         }
     }

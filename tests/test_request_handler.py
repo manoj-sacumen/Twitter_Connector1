@@ -1,22 +1,19 @@
 """Tests request handler module functionality."""
 import json
 
-import requests  # type:ignore
+from sac_requests.context.request import Response
 
 from src.collector import Collector
-from src.request_handler import send_request
 from tests.utility import get_test_input_data
 
 
-def test_send_request():
-    """Test functionality which sends request to given url."""
+def test_send_get_request():
+    """Test functionality which sends request to given endpoint."""
     input_data = get_test_input_data()
-    method = input_data.method
-    url = input_data.url
+    end_point = input_data.end_point
     col = Collector()
-    headers = col.headers
-    response = send_request(url=url, method=method, headers=headers, data={})
-    assert isinstance(response, requests.Response)
+    response = col.request_handel.send_get_request(endpoint=end_point)
+    assert isinstance(response, Response)
     if col.response.status_code == 200:
         assert input_data.query in col.response.text
         json_data = json.loads(col.response.text)

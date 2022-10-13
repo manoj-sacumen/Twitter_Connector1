@@ -2,9 +2,9 @@
 import os
 import sys
 
-import requests  # type: ignore
 import requests_mock
 
+from src.request_handler import RequestHandler
 from tests.test_data.test_data import (test_data_collector,
                                        test_data_file_writer,
                                        test_data_request_handler)
@@ -12,6 +12,8 @@ from tests.test_data.test_data import (test_data_collector,
 t_data = {'test_collector': test_data_collector,
           'test_file_writer': test_data_file_writer,
           'test_request_handler': test_data_request_handler}
+
+req = RequestHandler(headers={}, host='mock_path', auth_type="NO_AUTH")
 
 
 def get_test_input_data(func_name=''):
@@ -35,5 +37,5 @@ def get_test_output_data(func_name=''):
 def create_response_obj(text_data='', status_code=200):
     """Create dummy response object with given parameters."""
     with requests_mock.Mocker() as mock:
-        mock.get('http://mock_path', text=text_data, status_code=status_code)
-        return requests.get('http://mock_path')
+        mock.get('https://mock_path/', text=text_data, status_code=status_code)
+        return req.send_get_request(endpoint='')
